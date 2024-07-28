@@ -260,9 +260,12 @@ h2 {
 
 .skill p {
     margin: 0;
-    max-width: 250px; /* Set a maximum width for the description text */
+    max-width: 250px;
 }
 
+#profilePicture {
+    cursor: pointer; 
+}
 
 footer {
     background-color: #A987A8;
@@ -404,3 +407,212 @@ footer p {
         display: none; /* Hide vertical divider on mobile */
     }
 }
+@media (min-width: 601px) and (max-width: 900px) {
+    body {
+        font-size: 20px;
+    }
+    
+    header {
+        width: 100%; 
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: row; 
+        gap: 10px; 
+        position: absolute;
+        top: 60px; 
+        margin-left: 0; 
+        background-color: #A987A8;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 95%; 
+        margin: 0 auto; 
+    }
+
+    .hamburger {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .nav-list.show {
+        display: flex;
+    }
+
+    .about-me-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 20%; /* Reduce top margin */
+    }
+
+    .background-container {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .profile-picture {
+        width: 200px;
+        height: auto; /* Maintain aspect ratio */
+        margin: 0 auto; /* Center image */
+    }
+
+    .profile-picture-container {
+        text-align: center; /* Center text below image */
+    }
+
+    .intro {
+        font-size: 1.5rem; /* Adjust font size */
+        margin-top: 10%; /* Reduce top margin */
+    }
+
+    .about-me-content {
+        font-size: 1rem;
+    }
+
+    .skills-container {
+        margin: 0;
+    }
+
+    .skills {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+
+    .social-logos img {
+        width: 50px; /* Adjust size for better fit */
+    }
+
+    .social-media img {
+        width: 40px; /* Adjust size for better fit */
+    }
+
+    footer {
+        height: auto; /* Adjust height */
+        width: 100%; /* Ensure it fits within the screen */
+        padding: 10px; /* Add padding */
+        box-sizing: border-box; /* Ensure padding is included in width */
+    }
+
+    .stats {
+        flex-direction: column;
+        align-items: center;
+        width: 100%; /* Full width */
+        padding: 10px;
+        margin-left: 0; /* Remove left margin */
+        text-align: center;
+    }
+
+    .stat {
+        margin-bottom: 20px;
+        margin-left: 0; /* Remove left margin */
+    }
+
+    .vertical-divider {
+        display: none; /* Hide vertical divider on mobile */
+    }
+}
+
+/* Media query for devices with a width of either 1024px or 912px */
+@media (width: 1024px), (width: 912px) {
+    body {
+        font-size: 20px; /* Adjust font size for 1024px and 912px widths */
+    }
+
+    header {
+        width: 100%; /* Ensure header fits within the screen */
+    }
+
+    .nav-list {
+        display: flex; /* Show navigation items */
+        flex-direction: row; /* Horizontal layout */
+        gap: 10px; /* Adjust spacing between items */
+        position: relative; /* Default positioning */
+        top: 0; /* No offset */
+        margin-left: 0; /* Default margin */
+        background-color: transparent; /* No background color */
+        box-shadow: none; /* No box shadow */
+        padding: 0; /* No padding */
+        width: auto; /* Default width */
+    }
+
+    .hamburger {
+        display: none; /* Hide hamburger menu */
+    }
+
+    .about-me-header {
+        flex-direction: row; /* Horizontal layout */
+        align-items: flex-start; /* Align items to the start */
+        text-align: left; /* Left-aligned text */
+        margin-top: 0; /* No top margin */
+    }
+
+    .background-container {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .profile-picture {
+        width: 250px; /* Larger width */
+        height: auto; /* Maintain aspect ratio */
+        margin: 0; /* No margin */
+    }
+
+    .profile-picture-container {
+        text-align: left; /* Left-aligned text */
+    }
+
+    .intro {
+        font-size: 1.5rem; /* Adjust font size */
+        margin-top: 0; /* No top margin */
+    }
+
+    .about-me-content {
+        font-size: 1rem;
+    }
+
+    .skills-container {
+        margin: 0;
+    }
+
+    .skills {
+        grid-template-columns: repeat(3, 1fr); /* Three-column layout */
+    }
+
+    .social-logos img {
+        width: 40px; /* Adjust size */
+    }
+
+    .social-media img {
+        width: 40px; /* Adjust size */
+    }
+
+    footer {
+        height: auto; 
+        width: 100%; 
+        padding: 20px; 
+        box-sizing: border-box; 
+    }
+
+    .stats {
+        flex-direction: row; 
+        align-items: flex-start; 
+        width: 100%; 
+        padding: 10px;
+        margin-left: 0; 
+        text-align: left;
+    }
+
+    .stat {
+        margin-bottom: 0; 
+        margin-left: 0; 
+    }
+
+    .vertical-divider {
+        display: block; 
+    }
+}
+
+
