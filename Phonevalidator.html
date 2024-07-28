@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telephone Validator</title>
+    <style>
+        body {
+            font-family: 'Acme', sans-serif;
+            background-color: #fcf8f8;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #e2cbe1;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        button {
+            color: #511F52;
+            width: 150px;
+            height: 40px;
+            font-size: 18px;
+            border: 2px solid #511F52;
+            box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5);
+            font-family: 'Acme', sans-serif;
+            margin: 2%;
+        }
+        .close {
+            display: block;
+            text-align: right;
+            margin-bottom: 20px;
+            color: #511F52;
+        }
+        .close span {
+            font-size: 40px;
+            cursor: pointer;
+        }
+        @font-face {
+            font-family: 'Acme';
+            src: url('Acme-Regular.ttf') format('woff2'),  /* Modern Browsers */
+                 url('Acme-Regular.ttf') format('woff');    /* Older Browsers */
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <a href="Project.html"> <div class="close">
+            <span onclick="closePopup()">&times;</span>
+        </div></a>
+        <h1>Telephone Validator</h1>
+        <p>
+            The Telephone Validator is a web application designed to validate telephone numbers based on various formats and rules. The app allows users to input a telephone number and check if it conforms to the specified format, handling international codes, area codes, and local numbers.
+        </p>
+        <p>
+            Key Features:
+        </p>
+        <ul>
+            <li>Validates telephone numbers based on predefined formats.</li>
+            <li>Supports international codes, area codes, and local numbers.</li>
+            <li>User-friendly interface for easy number input and validation.</li>
+            <li>Responsive design for optimal use on both desktop and mobile devices.</li>
+        </ul>
+        <p>
+            The app uses JavaScript to perform telephone number validation and format checking. CSS is used to style the user interface, providing a clean and modern look. The design is mobile-first, ensuring compatibility across various devices.
+        </p>
+        <div class="button-container">
+            <button onclick="window.open('https://elhamy786.github.io/Telephone-number_validator/')">Live Demo</button>
+            <button onclick="window.open('https://github.com/elhamy786/Telephone-number_validator/tree/phone-number-validator')">Source Code</button>
+        </div>
+    </div>
+
+    <script>
+        function closePopup() {
+            window.close();
+        }
+    </script>
+</body>
+</html>

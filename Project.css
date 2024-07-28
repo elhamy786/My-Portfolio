@@ -1,0 +1,345 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fcf8f8;
+    font-family: 'Acme', sans-serif;
+}
+
+header {
+    background-color: #A987A8;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    width: 97.5%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.hamburger {
+    display: none;
+}
+
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+.nav-list li {
+    margin: 0 15px; 
+}
+
+.nav-list a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 15px 0;
+    display: block;
+}
+
+header .logo {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 1rem; 
+}
+
+header .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+header .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li {
+    display: inline;
+    margin: 10px;
+    font-size: 18px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+#projects {
+    text-align: center;
+    margin-top: 40px;
+    height: 90%;
+}
+
+.project {
+    background: rgba(224, 212, 212, 0.41);
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: left;
+    margin: 20px 10px; /* Adjusted margin for closer spacing */
+    padding: 10px;
+    max-width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #511F52; 
+  box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5); 
+  width: 90%;
+  height: 90%;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #511F52; 
+}
+
+.button-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.demo-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #511F52;
+  color: white;
+  width: 270px;
+  height: 40px;
+  font-size: 18px;
+  font-family: 'Acme', sans-serif;
+}
+
+.see-more-container {
+    margin-top: 40px; /* Adjust this margin as needed */
+}
+
+.see-more {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #511F52;
+  color: white;
+  width: 150px;
+  height: 40px;
+  font-size: 18px;
+  font-family: 'Acme', sans-serif;
+}
+footer {
+    background-color:  rgba(169, 135, 168, 1);
+    color: white;
+    padding: 40px;
+    text-align: center;
+    margin-top: 40px;
+    
+}
+
+.social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-media img {
+    width: 60px;
+    vertical-align: middle;
+}
+
+.blog-link {
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+.blog-link a {
+    color: white;
+    text-decoration: underline;
+}
+
+.blog-link a:hover {
+    color: #ccc;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+@font-face {
+    font-family: 'Acme';
+    src: url('Acme-Regular.ttf') format('woff2'),  /* Modern Browsers */
+         url('Acme-Regular.ttf') format('woff');    /* Older Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* Base styles for mobile devices (small screens) */
+@media (max-width: 780px) {
+    header{
+        width:92% ;
+    }
+    .nav-list {
+        display: none;
+        flex-direction: row; /* Change from column to row for horizontal layout */
+        gap: 10px; /* Adjust spacing between items as needed */
+        position: absolute;
+        top: 60px; /* Adjust based on your header height */
+        margin-left: -20px; /* Adjust based on your layout */
+        background-color: #A987A8;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 95%; 
+        
+    }
+
+    .hamburger {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .nav-list.show {
+        display: flex;
+    }
+
+    .project {
+        max-width: 100%; /* Make project containers full width */
+        margin: 10px 0; /* Adjust margin */
+    }
+
+    .button-container {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+
+    .demo-button, .see-more {
+        width: 100%; /* Make buttons full width */
+        height: auto; /* Adjust height */
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .social-media img {
+        width: 40px; /* Adjust icon size */
+    }
+
+    .blog-link {
+        font-size: 1em; /* Adjust font size */
+    }
+    footer {
+        width: 80%;
+    }
+}
+
+/* Styles for tablets (medium screens) */
+@media (min-width: 601px) and (max-width: 900px) {
+    header {
+        width: 100%; /* Make header full width on tablets */
+        padding: 1rem; /* Adjust padding */
+    }
+
+    .logo {
+        font-size: 1.4rem; /* Adjust font size for tablets */
+    }
+
+    .navbar {
+        flex-direction: row; /* Align items horizontally */
+    }
+
+    .menu-toggle {
+        display: none; /* Hide menu toggle on tablets */
+    }
+
+    .nav-list {
+        display: flex; /* Show nav list */
+        flex-direction: row; /* Align items horizontally */
+    }
+
+    .nav-list li {
+        margin: 0 10px; /* Adjust margin for tablets */
+    }
+
+    .project {
+        max-width: 45%; /* Adjust width for tablets */
+        margin: 15px 10px; /* Adjust margin */
+    }
+
+    .button-container {
+        flex-direction: row; /* Align buttons horizontally */
+    }
+
+    .demo-button, .see-more {
+        width: auto; /* Adjust width */
+        height: auto; /* Adjust height */
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .social-media img {
+        width: 50px; /* Adjust icon size */
+    }
+
+    .blog-link {
+        font-size: 1.1em; /* Adjust font size */
+    }
+    footer {
+        width: 98%;
+    }
+}
+
+/* Styles for larger screens (desktops) */
+@media (min-width: 901px) {
+    .navbar {
+        flex-direction: row; /* Align items horizontally */
+    }
+
+    .nav-list {
+        display: flex; /* Show nav list */
+        flex-direction: row; /* Align items horizontally */
+    }
+
+    .project {
+        max-width: 300px; /* Maintain width on larger screens */
+    }
+
+    .button-container {
+        flex-direction: row; /* Align buttons horizontally */
+    }
+
+    .demo-button, .see-more {
+        width: auto; /* Adjust width */
+        height: auto; /* Adjust height */
+        font-size: 18px; /* Maintain font size */
+    }
+}
