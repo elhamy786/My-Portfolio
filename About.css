@@ -297,21 +297,27 @@ footer p {
 }
 
 @media (max-width: 600px) {
-    header{
-        width:125% ;
+    body {
+        font-size: 18px; /* Slightly smaller font size for better readability */
     }
+    
+    header {
+        width: 100%; /* Ensure header fits within the screen */
+    }
+
     .nav-list {
         display: none;
-        flex-direction: row; /* Change from column to row for horizontal layout */
-        gap: 10px; /* Adjust spacing between items as needed */
+        flex-direction: column; /* Vertical layout for mobile */
+        gap: 10px;
         position: absolute;
         top: 60px; /* Adjust based on your header height */
-        margin-left: -20px; /* Adjust based on your layout */
+        left: 0;
+        right: 0; /* Ensure it spans the full width */
         background-color: #A987A8;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        padding: 20px;
+        padding: 10px;
         width: 95%; 
-        
+        margin: 0 auto; /* Center the menu */
     }
 
     .hamburger {
@@ -330,7 +336,7 @@ footer p {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        margin-top: 30%;
+        margin-top: 7%; 
     }
 
     .background-container {
@@ -339,22 +345,22 @@ footer p {
     }
 
     .profile-picture {
-        width: 200px;
-        height: 250px;
-        margin: 0 auto; /* Center image */
+        width: 220px; 
+        height: 220px; 
+        margin: 0 auto; 
     }
 
     .profile-picture-container {
-        text-align: center; /* Center text below image */
+        text-align: center; 
     }
 
     .intro {
-        font-size: 20px;
-        margin-top: 20%;
+        font-size: 2rem; 
+        margin-top: 10%; 
     }
 
     .about-me-content {
-        font-size: 1rem;
+        font-size: 120%;
     }
 
     .skills-container {
@@ -362,38 +368,39 @@ footer p {
     }
 
     .skills {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Single column layout */
     }
 
     .social-logos img {
-        width: 50px;
+        width: 40px; /* Adjust size for better fit */
     }
 
-  .social-media img {
-    width: 30px;
-  }
+    .social-media img {
+        width: 40px; /* Adjust size for better fit */
+    }
 
-  footer {
-    height: 100%;
-    width: 120%;
-  }
+    footer {
+        height: auto; 
+        width: 108%; 
+        padding: 10px; 
+        box-sizing: border-box; 
+    }
 
     .stats {
         flex-direction: column;
         align-items: center;
-        width: 90%;
+        width: 100%; /* Full width */
         padding: 10px;
-        margin-left: 1%;
+        margin-left: 0; /* Remove left margin */
         text-align: center;
     }
 
     .stat {
         margin-bottom: 20px;
-        margin-left: 15%;
+        margin-left: 0; /* Remove left margin */
     }
 
     .vertical-divider {
         display: none; /* Hide vertical divider on mobile */
     }
-
 }
