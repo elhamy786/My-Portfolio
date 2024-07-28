@@ -62,6 +62,14 @@ header .logo {
     margin-left: 1rem; 
 }
 
+.nav-list.show {
+    display: block;
+    background-color: white; /* Changed background color */
+    color: black; /* Changed text color */
+}
+
+
+
 header .menu-toggle {
     display: none;
     flex-direction: column;
