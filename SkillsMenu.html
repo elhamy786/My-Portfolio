@@ -11,7 +11,6 @@
             margin: 0;
             padding: 0;
         }
-
         .menu {
             position: fixed;
             top: 0;
@@ -27,7 +26,6 @@
             align-items: center;
             justify-content: center;
         }
-
         .close {
             display: block;
             position: absolute;
@@ -37,63 +35,59 @@
             color: #511F52;
             cursor: pointer;
         }
-
         h1 {
             text-align: center;
             color: #333;
-            font-size: 24px; 
+            font-size: 24px; /* Adjusted size for mobile */
         }
-
         p {
             line-height: 1.6;
             color: #555;
-            font-size: 14px; 
+            font-size: 14px; /* Adjusted size for mobile */
         }
         .button-container {
             text-align: center;
-            margin-top: 10px; 
+            margin-top: 10px; /* Reduced margin for mobile */
         }
         button {
             color: #511F52;
-            width: 120px; 
-            height: 35px; 
-            font-size: 14px; 
+            width: 120px; /* Adjusted width for mobile */
+            height: 35px; /* Adjusted height for mobile */
+            font-size: 14px; /* Adjusted font size for mobile */
             border: 2px solid #511F52;
             box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5);
             font-family: 'Acme', sans-serif;
-            margin: 5px; 
+            margin: 5px; /* Reduced margin for mobile */
         }
         .icon-container {
             display: flex;
-            flex-direction: column; 
+            flex-direction: column; /* Adjusted layout for mobile */
             align-items: center;
-            gap: 10px; 
-            margin-top: 10px; 
+            gap: 10px; /* Reduced gap for mobile */
+            margin-top: 10px; /* Reduced margin for mobile */
         }
         .icon-box {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            width: 60px; 
-            height: 60px; 
+            width: 60px; /* Adjusted width for mobile */
+            height: 60px; /* Adjusted height for mobile */
             border: 2px solid #511F52;
             border-radius: 50%;
             background-color: #f1e6ec;
             box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5);
             color: #511F52;
             text-align: center;
-            padding: 5px; 
+            padding: 5px; /* Reduced padding for mobile */
         }
-
         .icon {
-            font-size: 24px; 
+            font-size: 24px; /* Adjusted size for mobile */
         }
-
         @font-face {
             font-family: 'Acme';
-            src: url('Acme-Regular.ttf') format('woff2'),  
-                 url('Acme-Regular.ttf') format('woff');  
+            src: url('Acme-Regular.ttf') format('woff2'),  /* Modern Browsers */
+                 url('Acme-Regular.ttf') format('woff');    /* Older Browsers */
             font-weight: normal;
             font-style: normal;
         }
@@ -101,7 +95,7 @@
 </head>
 <body>
     <div class="menu" id="menu">
-        <a href="Project.html"><span class="close" id="close-btn">&#10005;</span></a>
+        <a href="Skills.html"><span class="close" id="close-btn">&#10005;</span></a>
         <h1>My Menu</h1>
         <div class="icon-container">
             <a href="index.html"><div class="icon-box">

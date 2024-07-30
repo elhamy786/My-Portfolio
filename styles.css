@@ -646,12 +646,12 @@ nav-list {
     font-style: normal;
   }
 
-  @media (max-width: 600px) ,(max-width: 900px) {
+  @media (max-width: 600px), (max-width: 900px) {
     body {
         font-size: 20px;
     }
 
-    header{
+    header {
         width: 107%;
     }
 
@@ -679,13 +679,13 @@ nav-list {
     .hero .content {
         text-align: center;
         padding: 10px;
-        order: 2; 
+        order: 2;
         margin-left: 20%;
     }
 
     .hero h1 {
         font-size: 2rem;
-        margin-top: 20px; 
+        margin-top: 20px;
     }
 
     .hero h2 {
@@ -697,37 +697,38 @@ nav-list {
     }
 
     .single-image img {
-        width: 100%; 
-        height: auto; 
+        width: 100%;
+        height: auto;
         border-radius: 50%;
         margin-left: 10%;
     }
 
     .buttons {
-        display: flex; 
+        display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center; 
-        gap: 20px; 
+        justify-content: center;
+        gap: 20px;
         padding: 10%;
     }
-    
+
     .button1,
     .button2 {
-        flex: 1; 
+        flex: 1;
         margin: 10px 0;
         padding: 5%;
     }
 
     .social-logos {
-        justify-content: center;
+        display: flex;
+        justify-content: flex-start;
         gap: 10px;
-        margin: 10px 0;
+        margin: 10px 10%;
     }
 
     .social-logos img {
-        width: 40px; 
-        margin-left: 200%;
+        width: 40px;
+        height: auto;
     }
 
     #about {
@@ -749,8 +750,8 @@ nav-list {
     }
 
     #about h2 {
-        margin-top: 20px; 
-        order: 2; 
+        margin-top: 20px;
+        order: 2;
     }
 
     #about p {
@@ -758,7 +759,7 @@ nav-list {
         margin: 0;
         padding: 10px;
         font-size: 1rem;
-        order: 3; 
+        order: 3;
     }
 
     #about button {
@@ -766,10 +767,10 @@ nav-list {
         padding: 2%;
     }
 
-  .certificates {
-    margin-left: 7%;
-    margin-top: -20%;
-  }
+    .certificates {
+        margin-left: 7%;
+        margin-top: -20%;
+    }
 
     .skills-box {
         flex-direction: row;
@@ -803,7 +804,7 @@ nav-list {
         margin-left: 9%;
     }
 
-    .projects h2, h3{
+    .projects h2, h3 {
         margin-left: 10%;
     }
 
@@ -831,9 +832,10 @@ nav-list {
         height: auto;
     }
 
-    .certificates h2, h3{
+    .certificates h2, h3 {
         margin-left: 10%;
     }
+
     .contact {
         width: 90%;
         margin: 7%;

@@ -205,23 +205,26 @@ footer p {
     font-style: normal;
   }
 
-  /* Base styles for mobile devices (small screens) */
-@media (max-width: 780px) {
-    header{
-        width:92% ;
+  @media (max-width: 600px) {
+    body {
+        font-size: 16px;
     }
+
+    header {
+        width: 92%;
+    }
+
     .nav-list {
         display: none;
-        flex-direction: row; /* Change from column to row for horizontal layout */
-        gap: 10px; /* Adjust spacing between items as needed */
+        flex-direction: column;
+        gap: 10px;
         position: absolute;
-        top: 60px; /* Adjust based on your header height */
-        margin-left: -20px; /* Adjust based on your layout */
+        top: 60px;
+        margin-left: -20px;
         background-color: #A987A8;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         padding: 20px;
-        width: 95%; 
-        
+        width: 95%;
     }
 
     .hamburger {
@@ -237,109 +240,111 @@ footer p {
     }
 
     .project {
-        max-width: 100%; /* Make project containers full width */
-        margin: 10px 0; /* Adjust margin */
+        max-width: 100%;
+        margin: 10px 0;
     }
 
     .button-container {
-        flex-direction: column; /* Stack buttons vertically */
+        flex-direction: column;
     }
 
     .demo-button, .see-more {
-        width: 100%; /* Make buttons full width */
-        height: auto; /* Adjust height */
-        font-size: 16px; /* Adjust font size */
+        width: 100%;
+        height: auto;
+        font-size: 16px;
     }
 
     .social-media img {
-        width: 40px; /* Adjust icon size */
+        width: 40px;
     }
 
     .blog-link {
-        font-size: 1em; /* Adjust font size */
+        font-size: 1em;
     }
+
     footer {
         width: 80%;
     }
 }
 
-/* Styles for tablets (medium screens) */
-@media (min-width: 601px) and (max-width: 900px) {
+/* Tablet styles (601px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
     header {
-        width: 100%; /* Make header full width on tablets */
-        padding: 1rem; /* Adjust padding */
+        width: 100%;
+        padding: 1rem;
     }
 
     .logo {
-        font-size: 1.4rem; /* Adjust font size for tablets */
+        font-size: 1.4rem;
     }
 
     .navbar {
-        flex-direction: row; /* Align items horizontally */
+        flex-direction: row;
     }
 
     .menu-toggle {
-        display: none; /* Hide menu toggle on tablets */
+        display: none;
     }
 
     .nav-list {
-        display: flex; /* Show nav list */
-        flex-direction: row; /* Align items horizontally */
+        display: flex;
+        flex-direction: row;
     }
 
     .nav-list li {
-        margin: 0 10px; /* Adjust margin for tablets */
+        margin: 0 10px;
     }
 
     .project {
-        max-width: 45%; /* Adjust width for tablets */
-        margin: 15px 10px; /* Adjust margin */
+        max-width: 45%;
+        margin: 15px 10px;
     }
 
     .button-container {
-        flex-direction: row; /* Align buttons horizontally */
+        flex-direction: row;
     }
 
     .demo-button, .see-more {
-        width: auto; /* Adjust width */
-        height: auto; /* Adjust height */
-        font-size: 16px; /* Adjust font size */
+        width: auto;
+        height: auto;
+        font-size: 16px;
     }
 
     .social-media img {
-        width: 50px; /* Adjust icon size */
+        width: 50px;
     }
 
     .blog-link {
-        font-size: 1.1em; /* Adjust font size */
+        font-size: 1.1em;
     }
+
     footer {
         width: 98%;
     }
 }
 
-/* Styles for larger screens (desktops) */
-@media (min-width: 901px) {
+/* Large screen styles (over 1024px) */
+@media (min-width: 1025px) {
     .navbar {
-        flex-direction: row; /* Align items horizontally */
+        flex-direction: row;
     }
 
     .nav-list {
-        display: flex; /* Show nav list */
-        flex-direction: row; /* Align items horizontally */
+        display: flex;
+        flex-direction: row;
     }
 
     .project {
-        max-width: 300px; /* Maintain width on larger screens */
+        max-width: 300px;
     }
 
     .button-container {
-        flex-direction: row; /* Align buttons horizontally */
+        flex-direction: row;
     }
 
     .demo-button, .see-more {
-        width: auto; /* Adjust width */
-        height: auto; /* Adjust height */
-        font-size: 18px; /* Maintain font size */
+        width: auto;
+        height: auto;
+        font-size: 18px;
     }
 }
