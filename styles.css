@@ -53,6 +53,10 @@ header ul li {
   margin: 0 15px;
 }
 
+a {
+  color: #000;
+}
+
 header ul li a {
   color: white;
   text-decoration: none;
@@ -136,6 +140,11 @@ header ul {
   left: 150px;
 }
 
+footer p {
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
 .hero p {
   font-size: 1.25rem;
   line-height: 1.5;
@@ -215,16 +224,22 @@ button {
   text-align: center;
 }
 
-.skills-section h2 { 
+.contact-info h2 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #511f52;
+  padding: 30px;
+}
+
+.skills-section h2 {
   font-size: 2em;
   color: rgba(173, 138, 173, 0.62);
-  text-shadow: -1px -1px 0 #511f52,  1px -1px 0 #511f52, -1px  1px 0 #511f52, 1px  1px 0 #511f52;
+  text-shadow: -1px -1px 0 #511f52, 1px -1px 0 #511f52, -1px  1px 0 #511f52, 1px  1px 0 #511f52;
 }
 
 .contact-form h3 {
   margin-bottom: 20px;
   color: #511f52;
-  padding: 0cap;
 }
 
 #about h2,
@@ -237,6 +252,12 @@ button {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
+}
+
+.contact-info img {
+  width: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
 }
 
 .social-media img {
@@ -277,9 +298,11 @@ button {
   margin-left: -200px;
 }
 
-footer p {
-  margin-top: 10px;
-  font-size: 0.9em;
+.contact-info p {
+  font-size: 130%;
+  color: #000;
+  line-height: 1.6;
+  padding: 50px;
 }
 
 .contact p {
@@ -295,6 +318,22 @@ footer p {
   text-align: justify;
   font-size: 120%;
   margin-right: -100px;
+}
+
+.contact-form button:hover {
+  background-color: #8e5c95;
+}
+
+.contact-form button {
+  background-color: #511f52;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  width: 30%;
+  margin-left: 35%;
 }
 
 #about button {
@@ -467,10 +506,7 @@ footer p {
 
 .education-card {
   background: rgba(224, 212, 212, 0.41);
-  border: 1px solid #ccc;
   border-radius: 2px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: left;
   padding:20px;
   display: flex;
   flex-direction: column;
@@ -515,7 +551,7 @@ footer p {
 
 .contact-form,
 .contact-info {
-  background:  rgba(169, 135, 168, 0.09);
+  background: rgba(169, 135, 168, 0.09);
   box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5);
   border: 2px solid #9f6ba0;
   border-radius: 10px;
@@ -544,48 +580,8 @@ footer p {
   background-color: rgba(169, 135, 168, 0.47);
 }
 
-.contact-form button {
-  background-color: #511f52;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1em;
-  width: 30%;
-  margin-left: 35%;
-}
-
-.contact-form button:hover {
-  background-color: #8e5c95;
-}
-
-.contact-info h2 {
-  margin-bottom: 20px;
-  font-size: 1.5em;
-  color: #511f52;
-  padding: 30px;
-}
-
-.contact-info p {
-  font-size: 130%;
-  color: #000;
-  line-height: 1.6;
-  padding: 50px;
-}
-
-.contact-info img {
-  width: 30px;
-  margin-right: 10px;
-  vertical-align: middle;
-}
-
-a {
-  color: #000;
-}
-
 footer {
-  background-color:  rgba(169, 135, 168, 1);
+  background-color: rgba(169, 135, 168, 1);
   color: white;
   padding: 40px;
   text-align: center;
