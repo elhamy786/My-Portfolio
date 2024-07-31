@@ -44,15 +44,20 @@ header {
 }
 
 header ul li {
-    display: inline;
-    margin: 10px;
-    font-size: 18px;
-  }
-  
+  display: inline;
+  margin: 10px;
+  font-size: 18px;
+}
+
 .nav-list li {
   margin: 0 15px;
 }
 
+header ul li a {
+  color: white;
+  text-decoration: none;
+}
+  
 .nav-list a {
   color: rgb(0, 0, 0);
   text-decoration: none;
@@ -86,10 +91,6 @@ header ul {
   list-style: none;
 }
 
-header ul li a {
-  color: white;
-  text-decoration: none;
-}
 
 
 .about-me {
@@ -152,7 +153,7 @@ h2 {
 .profile-picture-circles .circle {
   width: 10px;
   height: 10px;
-  background-color: #B495A4;
+  background-color: #b495a4;
   border: rgba(81, 31, 82, 1);
   border-radius: 50%;
 }
@@ -193,8 +194,8 @@ h2 {
   align-items: center;
   padding: 20px;
   background-color: #f4e7ee;
-  border: 2px solid #511F52; 
-  box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5); 
+  border: 2px solid #511f52;
+  box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5);
   margin-top: 50px;
   margin-left: 35%;
   width: 80%;
@@ -207,6 +208,10 @@ h2 {
 .stat h3 {
   font-size: 36px;
   margin: 0;
+}
+
+footer p {
+  margin-top: 10px;
 }
 
 .stat p {
@@ -235,14 +240,14 @@ h2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  text-align: left; 
+  text-align: left;
 }
 
 .skills h3 {
   grid-column: span 2;
   font-size: 24px;
   margin-bottom: 20px;
-  text-align: center; 
+  text-align: center;
 }
 
 .skill {
@@ -262,7 +267,7 @@ h2 {
 }
 
 #profilePicture {
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 footer {
@@ -284,15 +289,10 @@ footer .social-media img {
   vertical-align: middle;
 }
 
-footer p {
-  margin-top: 10px;
-}
-
-
 @font-face {
   font-family: 'Acme';
-  src: url('Acme-Regular.ttf') format('woff2'),  
-    url('Acme-Regular.ttf') format('woff');    
+  src: url('Acme-Regular.ttf') format('woff2'),
+    url('Acme-Regular.ttf') format('woff');
   font-weight: normal;
   font-style: normal;
 }
