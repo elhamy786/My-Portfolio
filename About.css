@@ -289,7 +289,8 @@ footer .social-media img {
 
 @font-face {
   font-family: 'Acme';
-  src: url('Acme-Regular.ttf') format('woff2'),
+  src: 
+    url('Acme-Regular.ttf') format('woff2'),
     url('Acme-Regular.ttf') format('woff');
   font-weight: normal;
   font-style: normal;
@@ -297,7 +298,7 @@ footer .social-media img {
 
 @media (max-width: 600px) {
   body {
-    font-size: 18px; 
+    font-size: 18px;
   }
 
   header {

@@ -373,24 +373,24 @@ footer p {
         width: 48%;
     }
 
-    .skill img {
-        width: 90px;
-        height: 90px;
-    }
+  .skill img {
+    width: 90px;
+    height: 90px;
+  }
 
-    footer {
-        padding: 30px;
-    }
+  footer {
+    padding: 30px;
+  }
 
-    .social-media img {
-        width: 50px;
-    }
+  .social-media img {
+    width: 50px;
+  }
 
-    .blog-link {
-        font-size: 1.1em;
-    }
+  .blog-link {
+    font-size: 1.1em;
+  }
 
-    footer p {
-        font-size: 0.85em;
-    }
+  footer p {
+    font-size: 0.85em;
+  }
 }
