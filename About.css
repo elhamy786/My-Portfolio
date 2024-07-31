@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background-color: #A987A8;
+  background-color: #a987a8;
   color: white;
   padding: 1rem;
   text-align: center;
@@ -36,15 +36,21 @@ header {
 
 .nav-list {
   display: flex;
-  justify-content: flex-end; 
+  justify-content: flex-end;
   list-style: none;
   padding: 0;
   margin: 0;
   gap: 20px;
 }
 
+header ul li {
+    display: inline;
+    margin: 10px;
+    font-size: 18px;
+  }
+  
 .nav-list li {
-  margin: 0 15px; 
+  margin: 0 15px;
 }
 
 .nav-list a {
@@ -57,7 +63,7 @@ header {
 header .logo {
   font-size: 25px;
   font-weight: bold;
-  margin-left: 1rem; 
+  margin-left: 1rem;
 }
 
 header .menu-toggle {
@@ -78,12 +84,6 @@ header .menu-toggle .bar {
 
 header ul {
   list-style: none;
-}
-
-header ul li {
-  display: inline;
-  margin: 10px;
-  font-size: 18px;
 }
 
 header ul li a {
