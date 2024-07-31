@@ -80,6 +80,15 @@ header .menu-toggle {
   right: 1rem;
 }
 
+.bar {
+  background-color: rgba(240, 235, 240, 1);
+  border: 2px solid #511f52;
+  box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5);
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+}
+
 header .menu-toggle .bar {
   width: 25px;
   height: 3px;
@@ -171,15 +180,6 @@ footer p {
   color: #511f52;
 }
 
-.bar {
-  background-color: rgba(240, 235, 240, 1);
-  border: 2px solid #511f52;
-  box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5);
-  border-radius: 25px;
-  overflow: hidden;
-  position: relative;
-}
-
 .fill {
   height: 37px;
   background-color: #511f52;
@@ -247,18 +247,19 @@ footer {
   header {
     width: 107%;
   }
+
   .nav-list {
     display: none;
     flex-direction: row;
     gap: 10px;
     position: absolute;
     top: 60px;
+    margin: 0 auto;
     margin-left: 0;
-    background-color: #A987A8;
+    background-color: #a987a8;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 95%;
-    margin: 0 auto;
   }
 
   .hamburger {
@@ -276,6 +277,10 @@ footer {
   .skills-container h1 {
     font-size: 2rem;
     margin-left: 10%;
+  }
+
+  footer p {
+    font-size: 0.8em;
   }
 
   .skills-container p {
@@ -314,9 +319,6 @@ footer {
     font-size: 1em;
   }
 
-  footer p {
-    font-size: 0.8em;
-  }
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
@@ -355,6 +357,10 @@ footer {
     font-size: 2em;
   }
 
+  footer p {
+    font-size: 0.85em;
+  }
+  
   .skills-container p {
     font-size: 1.1em;
   }
@@ -389,7 +395,4 @@ footer {
     font-size: 1.1em;
   }
 
-  footer p {
-    font-size: 0.85em;
-  }
 }

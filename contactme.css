@@ -1,5 +1,4 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,7 +7,7 @@ body {
 }
 
 header {
-  background-color: #A987A8;
+  background-color: #a987a8;
   color: white;
   padding: 1rem;
   text-align: center;
@@ -44,8 +43,19 @@ header {
   gap: 20px;
 }
 
+header ul li {
+  display: inline;
+  margin: 10px;
+  font-size: 18px;
+}
+  
 .nav-list li {
   margin: 0 15px;
+}
+
+header ul li a {
+  color: white;
+  text-decoration: none;
 }
 
 .nav-list a {
@@ -81,17 +91,6 @@ header ul {
   list-style: none;
 }
 
-header ul li {
-  display: inline;
-  margin: 10px;
-  font-size: 18px;
-}
-
-header ul li a {
-  color: white;
-  text-decoration: none;
-}
-
 .contact {
   padding: 50px 0;
   text-align: center;
@@ -104,9 +103,13 @@ header ul li a {
   margin-bottom: 20px;
 }
 
+footer p {
+  margin-top: 10px;
+}
+
 .contact p {
   font-size: 1.2em;
-  color: #511F52;
+  color: #511f52;
   margin-bottom: 30px;
 }
 
@@ -117,7 +120,8 @@ header ul li a {
   margin-top: 20px;
 }
 
-.contact-form, .contact-info {
+.contact-form,
+.contact-info {
   padding: 170px;
   text-align: left;
   max-width: 550px;
@@ -146,7 +150,8 @@ header ul li a {
   font-size: 1em;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input, 
+.contact-form textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
@@ -160,7 +165,7 @@ header ul li a {
 
 .contact-form button {
   background-color: white;
-  color: #511F52;
+  color: #511f52;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -172,7 +177,7 @@ header ul li a {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-right: 15%;
   width: 40%;
-  border: 1.5px solid #511F52;
+  border: 1.5px solid #511f52;
 }
 
 .contact-form button:hover {
@@ -189,19 +194,19 @@ a:hover {
 }
 
 .contact-form textarea {
-  height: 100px; 
+  height: 100px;
   width: 735px;
 }
 
 .contact-form input {
   height: 20px;
-  padding: 15px; 
-  font-size: 1.1em; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  padding: 15px;
+  font-size: 1.1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 footer {
-  background-color: #A987A8;
+  background-color: #a987a8;
   color: white;
   text-align: center;
   padding: 20px;
@@ -219,15 +224,11 @@ footer .social-media img {
   vertical-align: middle;
 }
 
-footer p {
-  margin-top: 10px;
-}
-
 @font-face {
   font-family: 'Acme';
-    src:
-      url('Acme-Regular.ttf') format('woff2'),
-      url('Acme-Regular.ttf') format('woff');
+  src:
+    url('Acme-Regular.ttf') format('woff2'),
+    url('Acme-Regular.ttf') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -236,23 +237,23 @@ footer p {
   body {
     font-size: 20px;
   }
-    
+
   header {
-    width: 100%; 
+    width: 100%;
   }
 
   .nav-list {
     display: none;
-    flex-direction: row; 
-    gap: 10px; 
+    flex-direction: row;
+    gap: 10px;
     position: absolute;
-    top: 60px; 
-    margin-left: 0; 
-    background-color: #A987A8;
+    top: 60px;
+    margin-left: 0;
+    background-color: #a987a8;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 95%; 
-    margin: 0 auto; 
+    width: 95%;
+    margin: 0 auto;
   }
 
   .hamburger {
@@ -293,9 +294,9 @@ footer p {
   body {
     font-size: 20px;
   }
-  
+
   header {
-    width: 135%; 
+    width: 135%;
   }
 
   .logo{
@@ -305,16 +306,16 @@ footer p {
 
   .nav-list {
     display: none;
-    flex-direction: row; 
-    gap: 10px; 
+    flex-direction: row;
+    gap: 10px;
     position: absolute;
-    top: 60px; 
-    margin-left: 0; 
+    top: 60px;
+    margin-left: 0;
     background-color: #A987A8;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 95%; 
-    margin: 0 auto; 
+    width: 95%;
+    margin: 0 auto;
   }
 
   .hamburger {
@@ -349,7 +350,7 @@ footer p {
     position: absolute;
     top: 60px;
     right: 0;
-    background-color: #A987A8;
+    background-color: #a987a8;
     width: 100%;
     padding: 20px;
   }
