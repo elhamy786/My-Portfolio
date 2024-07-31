@@ -36,15 +36,21 @@ header {
 
 .nav-list {
   display: flex;
-  justify-content: flex-end; 
+  justify-content: flex-end;
   list-style: none;
   padding: 0;
   margin: 0;
   gap: 20px;
 }
 
+header ul li {
+  display: inline;
+  margin: 10px;
+  font-size: 18px;
+}
+
 .nav-list li {
-  margin: 0 15px; 
+  margin: 0 15px;
 }
 
 .nav-list a {
@@ -57,7 +63,7 @@ header {
 header .logo {
   font-size: 25px;
   font-weight: bold;
-  margin-left: 1rem; 
+  margin-left: 1rem;
 }
 
 header .menu-toggle {
@@ -80,12 +86,6 @@ header ul {
   list-style: none;
 }
 
-header ul li {
-  display: inline;
-  margin: 10px;
-  font-size: 18px;
-}
-
 header ul li a {
   color: white;
   text-decoration: none;
@@ -106,7 +106,7 @@ header ul li a {
   padding: 10px;
   max-width: 300px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border: 2px solid #511F52; 
+  border: 2px solid #511f52; 
   box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5); 
   width: 90%;
   height: 90%;
@@ -150,7 +150,7 @@ header ul li a {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  background-color: #511F52;
+  background-color: #511f52;
   color: white;
   width: 150px;
   height: 40px;
@@ -280,69 +280,68 @@ footer p {
     flex-direction: row;
   }
 
-    .menu-toggle {
-        display: none;
-    }
+  .menu-toggle {
+    display: none;
+  }
 
-    .nav-list {
-        display: flex;
-        flex-direction: row;
-    }
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+  }
 
-    .nav-list li {
-        margin: 0 10px;
-    }
+  .nav-list li {
+    margin: 0 10px;
+  }
 
-    .project {
-        max-width: 45%;
-        margin: 15px 10px;
-    }
+  .project {
+    max-width: 45%;
+    margin: 15px 10px;
+  }
 
-    .button-container {
-        flex-direction: row;
-    }
+  .button-container {
+    flex-direction: row;
+  }
 
-    .demo-button, .see-more {
-        width: auto;
-        height: auto;
-        font-size: 16px;
-    }
+  .demo-button, .see-more {
+    width: auto;
+    height: auto;
+    font-size: 16px;
+  }
 
-    .social-media img {
-        width: 50px;
-    }
+  .social-media img {
+    width: 50px;
+  }
 
-    .blog-link {
-        font-size: 1.1em;
-    }
+  .blog-link {
+    font-size: 1.1em;
+  }
 
-    footer {
-        width: 98%;
-    }
+  footer {
+    width: 98%;
+  }
 }
 
-/* Large screen styles (over 1024px) */
 @media (min-width: 1025px) {
-    .navbar {
-        flex-direction: row;
-    }
+  .navbar {
+    flex-direction: row;
+  }
 
-    .nav-list {
-        display: flex;
-        flex-direction: row;
-    }
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+  }
 
-    .project {
-        max-width: 300px;
-    }
+  .project {
+    max-width: 300px;
+  }
 
-    .button-container {
-        flex-direction: row;
-    }
+  .button-container {
+    flex-direction: row;
+  }
 
-    .demo-button, .see-more {
-        width: auto;
-        height: auto;
-        font-size: 18px;
-    }
+  .demo-button, .see-more {
+    width: auto;
+    height: auto;
+    font-size: 18px;
+  }
 }
