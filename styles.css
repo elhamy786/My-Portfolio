@@ -120,6 +120,11 @@ header ul {
   padding: 20px;
 }
 
+footer p {
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
 .hero h1,
 .hero h2,
 .hero p {
@@ -138,11 +143,6 @@ header ul {
   font-weight: normal;
   top: 200px;
   left: 150px;
-}
-
-footer p {
-  margin-top: 10px;
-  font-size: 0.9em;
 }
 
 .hero p {
