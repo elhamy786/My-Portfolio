@@ -337,7 +337,7 @@ footer .social-media img {
     align-items: center;
     text-align: center;
     margin-top: 7%;
-   }
+  }
 
   .background-container {
     margin-left: 0;
@@ -420,12 +420,12 @@ footer .social-media img {
     gap: 10px;
     position: absolute;
     top: 60px;
+    margin: 0 auto;
     margin-left: 0;
     background-color: #a987a8;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 95%;
-    margin: 0 auto;
   }
 
   .hamburger {
@@ -587,27 +587,27 @@ footer .social-media img {
   }
 
   footer {
-    height: auto; 
-    width: 100%; 
-    padding: 20px; 
-    box-sizing: border-box; 
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
   }
 
   .stats {
-    flex-direction: row; 
-    align-items: flex-start; 
-    width: 100%; 
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
     padding: 10px;
-    margin-left: 0; 
+    margin-left: 0;
     text-align: left;
   }
 
   .stat {
-    margin-bottom: 0; 
-    margin-left: 0; 
+    margin-bottom: 0;
+    margin-left: 0;
   }
 
   .vertical-divider {
-    display: block; 
+    display: block;
   }
 }
