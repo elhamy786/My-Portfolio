@@ -348,11 +348,12 @@ footer .social-media img {
     flex-direction: column;
   }
 
-    .contact-form, .contact-info {
+  .contact-form,
+  .contact-info {
     padding: 20px;
     width: 100%;
     height: auto;
-    }
+  }
 
   .contact-form .form-row {
     flex-direction: column;
@@ -375,7 +376,7 @@ footer .social-media img {
     width: 40px;
   }
 
-  footer{
+  footer {
     width: 133%;
   }
 }

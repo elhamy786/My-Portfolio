@@ -1,5 +1,4 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -35,18 +34,28 @@ header {
   display: none;
 }
 
-
 .nav-list {
   display: flex;
-  justify-content: flex-end; 
+  justify-content: flex-end;
   list-style: none;
   padding: 0;
   margin: 0;
   gap: 20px;
 }
 
+header ul li {
+  display: inline;
+  margin: 10px;
+  font-size: 18px;
+}
+
 .nav-list li {
-  margin: 0 15px; 
+  margin: 0 15px;
+}
+
+header ul li a {
+  color: white;
+  text-decoration: none;
 }
 
 .nav-list a {
@@ -59,16 +68,14 @@ header {
 header .logo {
   font-size: 25px;
   font-weight: bold;
-  margin-left: 1rem; 
+  margin-left: 1rem;
 }
 
 .nav-list.show {
   display: block;
-  background-color: white; 
-  color: black; 
+  background-color: white;
+  color: black;
 }
-
-
 
 header .menu-toggle {
   display: none;
@@ -90,17 +97,6 @@ header ul {
   list-style: none;
 }
 
-header ul li {
-  display: inline;
-  margin: 10px;
-  font-size: 18px;
-}
-
-header ul li a {
-  color: white;
-  text-decoration: none;
-}
-
 .hero {
   display: flex;
   align-items: center;
@@ -111,7 +107,9 @@ header ul li a {
   padding: 20px;
 }
 
-.hero h1, .hero h2, .hero p {
+.hero h1, 
+.hero h2, 
+.hero p {
   margin: 10px 0;
   opacity: 1;
   text-align: justify;
@@ -144,7 +142,6 @@ header ul li a {
   width: 370px; 
   height: 370px; 
   border-radius: 50%;
-   
 }
 
 .buttons {
@@ -154,15 +151,15 @@ header ul li a {
   margin-top: 20px;
   margin-left: 5px;
   display: flex;
-  justify-content: flex-start; 
-  gap: 0; 
-  padding: 30px; 
-  margin: 0; 
+  justify-content: flex-start;
+  gap: 0;
+  padding: 30px;
+  margin: 0;
 }
 
  .button1 {
   background-color: #511f52;
-  box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5); 
+  box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5);
   color: white;
   width: 150px;
   height: 40px;
@@ -174,8 +171,8 @@ header ul li a {
   width: 150px;
   height: 40px;
   font-size: 18px;
-  border: 2px solid #511f52; 
-  box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5); 
+  border: 2px solid #511f52;
+  box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5);
 }
 
 button {
@@ -183,28 +180,28 @@ button {
   padding: 0.5rem 1rem;
   border-radius: 5px;
   cursor: pointer;
-  margin-left: 5px; 
+  margin-left: 5px;
   font-family: 'Acme', sans-serif;
 }
 
 .social-logos {
   display: flex;
-  justify-content: flex-start; 
-  gap: 0; 
-  padding: -60px; 
-  margin: 50px; 
+  justify-content: flex-start;
+  gap: 0;
+  padding: -60px;
+  margin: 50px;
   width: 50px;
   height: 50px;
 }
 
 .social-logos img {
-  width: 60px; 
-  height: auto; 
-  margin-left: 5px; 
+  width: 60px;
+  height: auto;
+  margin-left: 5px;
   border-radius: 50%;
   padding: -30px;
 }
- 
+
 #about {
   max-width: 800px;
   margin: 0 auto;
@@ -212,7 +209,8 @@ button {
   text-align: center;
 }
 
-#about h2, #about h3 {
+#about h2, 
+#about h3 {
   text-align: center;
 }
 
@@ -220,7 +218,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px; 
+  margin-top: 20px;
 }
 
 #about img {
@@ -233,7 +231,7 @@ button {
 }
 
 #about p {
-  max-width: 60%; 
+  max-width: 60%;
   padding: 20px;
   border-radius: 10px;
   text-align: justify;
@@ -242,8 +240,8 @@ button {
 }
 
 #about button {
-  display: block; 
-  margin: -80px auto 0; 
+  display: block;
+  margin: -80px auto 0;
   background-color: #511f52;
   color: white;
   width: 150px;
@@ -251,7 +249,6 @@ button {
   font-size: 18px;
   margin-top: -2%;
 }
-
 
 .skills-container {
   text-align: center;
@@ -267,7 +264,6 @@ button {
   display: flex;
   justify-content: space-around;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   max-width: 800px;
   margin: 0 auto;
   height: 100%;
@@ -477,13 +473,14 @@ button {
   height: 150px;
   width: 250px;
   object-fit: cover;
-  border: 2px solid #511f52; 
-  box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5); 
+  border: 2px solid #511f52;
+  box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5);
 }
 
 .contact {
   text-align: center;
   padding: 30px;
+  box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5);
   background-color: #f9f7fb;
   border: 2px solid #511f52;
   border-radius: 15px;
@@ -513,6 +510,7 @@ button {
 
 .contact-form, .contact-info {
   background:  rgba(169, 135, 168, 0.09);
+  box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5);
   border: 2px solid #9f6ba0;
   border-radius: 10px;
   padding: 10px;
@@ -525,7 +523,7 @@ button {
 
 .contact-form h3 {
   margin-bottom: 20px;
-  color: #511F52;
+  color: #511f52;
   padding: 0cap;
 }
 
@@ -536,14 +534,15 @@ button {
   color: #000;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
   width: 90%;
   padding: 10px;
   margin-bottom: 20px;
   border: 1.5px solid #511f52;
   border-radius: 5px;
   font-size: 1em;
-  background-color: rgba(169, 135, 168, 0.47);;
+  background-color: rgba(169, 135, 168, 0.47);
 }
 
 .contact-form button {
@@ -591,7 +590,7 @@ footer {
   color: white;
   padding: 40px;
   text-align: center;
-  margin-top: 40px; 
+  margin-top: 40px;
 }
 
 .social-media a {
@@ -624,12 +623,13 @@ footer p {
 }
 
 @font-face {
-    font-family: 'Acme';
-    src: url('Acme-Regular.ttf') format('woff2'),  /* Modern Browsers */
-         url('Acme-Regular.ttf') format('woff');    /* Older Browsers */
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: 'Acme';
+  src: 
+    url('Acme-Regular.ttf') format('woff2'),
+    url('Acme-Regular.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 @media (max-width: 600px), (max-width: 900px) {
   body {
