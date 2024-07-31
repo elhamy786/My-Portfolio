@@ -289,7 +289,7 @@ footer .social-media img {
 
 @font-face {
   font-family: 'Acme';
-  src: 
+  src:
     url('Acme-Regular.ttf') format('woff2'),
     url('Acme-Regular.ttf') format('woff');
   font-weight: normal;
@@ -307,13 +307,13 @@ footer .social-media img {
 
   .nav-list {
     display: none;
-    flex-direction: column; 
+    flex-direction: column;
     gap: 10px;
     position: absolute;
     top: 60px;
     left: 0;
     right: 0;
-    background-color: #A987A8;
+    background-color: #a987a8;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 10px;
     width: 95%;
@@ -336,8 +336,8 @@ footer .social-media img {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 7%; 
-  }
+    margin-top: 7%;
+   }
 
   .background-container {
     margin-left: 0;
@@ -345,13 +345,13 @@ footer .social-media img {
   }
 
   .profile-picture {
-    width: 220px; 
-    height: 220px; 
-    margin: 0 auto; 
+    width: 220px;
+    height: 220px;
+    margin: 0 auto;
   }
 
   .profile-picture-container {
-    text-align: center; 
+    text-align: center;
   }
 
   .intro {
@@ -380,10 +380,10 @@ footer .social-media img {
   }
 
   footer {
-    height: auto; 
-    width: 108%; 
-    padding: 10px; 
-    box-sizing: border-box; 
+    height: auto;
+    width: 108%;
+    padding: 10px;
+    box-sizing: border-box;
   }
 
   .stats {
@@ -404,27 +404,28 @@ footer .social-media img {
     display: none;
   }
 }
+
 @media (min-width: 601px) and (max-width: 900px) {
   body {
     font-size: 20px;
   }
-    
+
   header {
-    width: 100%; 
+    width: 100%;
   }
 
   .nav-list {
     display: none;
-    flex-direction: row; 
-    gap: 10px; 
+    flex-direction: row;
+    gap: 10px;
     position: absolute;
-    top: 60px; 
-    margin-left: 0; 
-    background-color: #A987A8;
+    top: 60px;
+    margin-left: 0;
+    background-color: #a987a8;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 95%; 
-    margin: 0 auto; 
+    width: 95%;
+    margin: 0 auto;
   }
 
   .hamburger {
