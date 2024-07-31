@@ -160,11 +160,10 @@ header ul {
   margin: 0;
   margin-top: 20px;
   margin-left: 5px;
-  justify-content: flex-start;
   padding: 30px;
 }
 
- .button1 {
+.button1 {
   background-color: #511f52;
   box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5);
   color: white;
@@ -216,6 +215,18 @@ button {
   text-align: center;
 }
 
+.skills-section h2 { 
+  font-size: 2em;
+  color: rgba(173, 138, 173, 0.62);
+  text-shadow: -1px -1px 0 #511f52,  1px -1px 0 #511f52, -1px  1px 0 #511f52, 1px  1px 0 #511f52;
+}
+
+.contact-form h3 {
+  margin-bottom: 20px;
+  color: #511f52;
+  padding: 0cap;
+}
+
 #about h2,
 #about h3 {
   text-align: center;
@@ -243,6 +254,15 @@ button {
   margin-left: 5%;
 }
 
+.education-card img {
+  border-radius: 8px;
+  height: 150px;
+  width: 250px;
+  object-fit: cover;
+  border: 2px solid #511f52;
+  box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5);
+}
+
 #about img {
   border-radius: 50%;
   width: 370px;
@@ -250,6 +270,12 @@ button {
   object-fit: cover;
   margin-right: 30px;
   margin-left: -200px;
+}
+
+.contact p {
+  font-size: 1.2em;
+  color: #000;
+  margin-bottom: 30px;
 }
 
 #about p {
@@ -335,12 +361,6 @@ button {
   width: 20px;
 }
 
-.skills-section h2{ 
-  font-size: 2em;
-  color: rgba(173, 138, 173, 0.62);
-  text-shadow: -1px -1px 0 #511f52,  1px -1px 0 #511f52, -1px  1px 0 #511f52, 1px  1px 0 #511f52;
-}
-
 #projects {
   text-align: center;
   margin-top: 40px;
@@ -350,13 +370,11 @@ button {
 .project {
   background: rgba(224, 212, 212, 0.41);
   border-radius: 2px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: inline-block;
   text-align: left;
   margin: 20px 10px;
   padding: 10px;
   max-width: 300px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border: 2px solid #511f52;
   box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5);
   width: 90%;
@@ -448,8 +466,8 @@ button {
   flex-direction: column;
   align-items: center;
   height: 90%;
-  border: 2px solid #511f52; 
-  box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5); 
+  border: 2px solid #511f52;
+  box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5);
   text-align: justify;
   width: 90%;
 }
@@ -458,15 +476,6 @@ button {
   flex: 1;
   text-align: center;
   padding: 10px 0;
-}
-
-.education-card img {
-  border-radius: 8px;
-  height: 150px;
-  width: 250px;
-  object-fit: cover;
-  border: 2px solid #511f52;
-  box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5);
 }
 
 .contact {
@@ -487,12 +496,6 @@ button {
   color: #511f52;
 }
 
-.contact p {
-  font-size: 1.2em;
-  color: #000;
-  margin-bottom: 30px;
-}
-
 .contact-container {
   display: flex;
   justify-content: center;
@@ -500,23 +503,17 @@ button {
   margin-top: 20px;
 }
 
-.contact-form, .contact-info {
+.contact-form,
+.contact-info {
   background:  rgba(169, 135, 168, 0.09);
   box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5);
   border: 2px solid #9f6ba0;
   border-radius: 10px;
   padding: 10px;
   max-width: 400px;
-  box-shadow: 0 4px 8px #511f52;
   text-align: left;
   width: 50%;
   height: 70%;
-}
-
-.contact-form h3 {
-  margin-bottom: 20px;
-  color: #511f52;
-  padding: 0cap;
 }
 
 .contact-form label {
