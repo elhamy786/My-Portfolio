@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background-color: #A987A8;
+  background-color: #a987a8;
   color: white;
   padding: 1rem;
   text-align: center;
@@ -34,18 +34,28 @@ header {
   display: none;
 }
 
-
 .nav-list {
   display: flex;
-  justify-content: flex-end; 
+  justify-content: flex-end;
   list-style: none;
   padding: 0;
   margin: 0;
   gap: 20px;
 }
 
+header ul li {
+  display: inline;
+  margin: 10px;
+  font-size: 18px;
+}
+
 .nav-list li {
-  margin: 0 15px; 
+  margin: 0 15px;
+}
+
+header ul li a {
+  color: white;
+  text-decoration: none;
 }
 
 .nav-list a {
@@ -58,7 +68,7 @@ header {
 header .logo {
   font-size: 25px;
   font-weight: bold;
-  margin-left: 1rem; 
+  margin-left: 1rem;
 }
 
 header .menu-toggle {
@@ -79,17 +89,6 @@ header .menu-toggle .bar {
 
 header ul {
   list-style: none;
-}
-
-header ul li {
-  display: inline;
-  margin: 10px;
-  font-size: 18px;
-}
-
-header ul li a {
-  color: white;
-  text-decoration: none;
 }
 
 .skills-container {
@@ -113,7 +112,7 @@ header ul li a {
   display: block;
   width: 62%;
   height: 1px;
-  background-color: #511F52;
+  background-color: #511f52;
   position: absolute;
   bottom: 180px; 
 }
@@ -241,137 +240,137 @@ footer p {
 }
 
 @media (max-width: 600px) {
-    body {
-        font-size: 20px;
-    }
+  body {
+    font-size: 20px;
+  }
 
-    header {
-        width: 107%;
-    }
-    .nav-list {
-        display: none;
-        flex-direction: row; 
-        gap: 10px; 
-        position: absolute;
-        top: 60px; 
-        margin-left: 0; 
-        background-color: #A987A8;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        width: 95%; 
-        margin: 0 auto; 
-    }
+  header {
+    width: 107%;
+  }
+  .nav-list {
+    display: none;
+    flex-direction: row; 
+    gap: 10px; 
+    position: absolute;
+    top: 60px; 
+    margin-left: 0; 
+    background-color: #A987A8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 95%; 
+    margin: 0 auto; 
+  }
 
-    .hamburger {
-        display: block;
-        background: none;
-        border: none;
-        font-size: 24px;
-        cursor: pointer;
-    }
+  .hamburger {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
 
-    .nav-list.show {
-        display: flex;
-    }
+  .nav-list.show {
+    display: flex;
+  }
 
-    .skills-container h1 {
-        font-size: 2rem;
-        margin-left: 10%;
-    }
+  .skills-container h1 {
+    font-size: 2rem;
+    margin-left: 10%;
+  }
 
-    .skills-container p {
-        font-size: 1.5rem;
-        margin-left: 10%;
-    }
+  .skills-container p {
+    font-size: 1.5rem;
+    margin-left: 10%;
+  }
 
-    .skills-box {
-        padding: 10px;
-        margin-left: 10%;
-    }
+  .skills-box {
+    padding: 10px;
+    margin-left: 10%;
+  }
 
-    .skills-section {
-        flex-direction: column;
-    }
+  .skills-section {
+    flex-direction: column;
+  }
 
-    .skill-bar {
-        width: 100%;
-    }
+  .skill-bar {
+    width: 100%;
+  }
 
-    .skill img {
-        width: 80px;
-        height: 80px;
-    }
+  .skill img {
+    width: 80px;
+    height: 80px;
+  }
 
-    footer {
-        padding: 20px;
-        width: 104%;
-    }
+  footer {
+    padding: 20px;
+    width: 104%;
+  }
 
-    .social-media img {
-        width: 40px;
-    }
+  .social-media img {
+    width: 40px;
+  }
 
-    .blog-link {
-        font-size: 1em;
-    }
+  .blog-link {
+    font-size: 1em;
+  }
 
-    footer p {
-        font-size: 0.8em;
-    }
+  footer p {
+    font-size: 0.8em;
+  }
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
-    header {
-        padding: 0.75rem;
-        width: 100%;
-    }
+  header {
+    padding: 0.75rem;
+    width: 100%;
+  }
 
-    .logo {
-        font-size: 1.3rem;
-    }
+  .logo {
+    font-size: 1.3rem;
+  }
 
-    .nav-links {
-        display: none;
-        flex-direction: column;
-    }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+  }
 
-    .nav-list {
-        flex-direction: row;
-        align-items: flex-start;
-    }
+  .nav-list {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 
-    .nav-list li {
-        margin: 0 0 10px 0; 
-    }
+  .nav-list li {
+    margin: 0 0 10px 0; 
+  }
 
-    .nav-list a {
-        padding: 12px 0;
-    }
+  .nav-list a {
+    padding: 12px 0;
+  }
 
-    .menu-toggle {
-        display: flex;
-    }
+  .menu-toggle {
+    display: flex;
+  }
 
-    .skills-container h1 {
-        font-size: 2em;
-    }
+  .skills-container h1 {
+    font-size: 2em;
+  }
 
-    .skills-container p {
-        font-size: 1.1em;
-    }
+  .skills-container p {
+    font-size: 1.1em;
+  }
 
-    .skills-box {
-        padding: 15px;
-    }
+  .skills-box {
+    padding: 15px;
+  }
 
-    .skills-section {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+  .skills-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-    .skill-bar {
-        width: 48%;
-    }
+  .skill-bar {
+    width: 48%;
+  }
 
   .skill img {
     width: 90px;
