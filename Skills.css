@@ -318,7 +318,6 @@ footer {
   .blog-link {
     font-size: 1em;
   }
-
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
@@ -360,7 +359,7 @@ footer {
   footer p {
     font-size: 0.85em;
   }
-  
+
   .skills-container p {
     font-size: 1.1em;
   }
@@ -394,5 +393,4 @@ footer {
   .blog-link {
     font-size: 1.1em;
   }
-
 }
