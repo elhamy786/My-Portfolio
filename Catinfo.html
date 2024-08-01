@@ -11,6 +11,7 @@
             margin: 0;
             padding: 0;
         }
+
         .container {
             max-width: 900px;
             margin: 20px auto;
@@ -19,18 +20,22 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
         h1 {
             text-align: center;
             color: #333;
         }
+
         p {
             line-height: 1.6;
             color: #555;
         }
+
         .button-container {
             text-align: center;
             margin-top: 20px;
         }
+
         button {
             color: #511F52;
             width: 150px;
@@ -41,20 +46,22 @@
             font-family: 'Acme', sans-serif;
             margin: 2%;
         }
+
         .close {
-            display: block;
-            text-align: right;
-            margin-bottom: 20px;
-            color: #511F52;
+          display: block;
+          text-align: right;
+          margin-bottom: 20px;
+          color: #511F52;
         }
         .close span {
-            font-size: 40px;
-            cursor: pointer;
+          font-size: 40px;
+          cursor: pointer;
         }
+
         @font-face {
             font-family: 'Acme';
-            src: url('Acme-Regular.ttf') format('woff2'),  /* Modern Browsers */
-                 url('Acme-Regular.ttf') format('woff');    /* Older Browsers */
+            src: url('Acme-Regular.ttf') format('woff2'),
+                 url('Acme-Regular.ttf') format('woff');
             font-weight: normal;
             font-style: normal;
         }
@@ -82,11 +89,10 @@
             The app uses JavaScript for making API requests and handling responses. CSS is used to style the user interface, providing a clean and modern look. The design is mobile-first, ensuring that the app works well on a variety of devices.
         </p>
         <div class="button-container">
-            <button onclick="window.open('https://elhamy786.github.io/Cat_Info_App_Docs/')">Live Demo</button>
-            <button onclick="window.open('https://github.com/elhamy786/Cat_Info_App_Docs')">Source Code</button>
+          <button type="button" onclick="window.open('https://elhamy786.github.io/Cat_Info_App_Docs/')">Live Demo</button>
+          <button type="button" onclick="window.open('https://github.com/elhamy786/Cat_Info_App_Docs')">Source Code</button>
         </div>
     </div>
-
     <script>
         function closePopup() {
             window.close();
