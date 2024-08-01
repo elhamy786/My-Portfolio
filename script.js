@@ -16,10 +16,10 @@ window.scrollTo({
   });
 });
 document.querySelector('.see-more').addEventListener('click', () => {
-  alert('See more clicked!');
-});
-document.getElementById('contactForm').addEventListener('submit', (event) => {
-  event.preventDefault();
-  alert('Form submitted successfully!');
-    });
+  alert('See more clicked!'); // This line shows the alert
+  });
+  document.getElementById('contactForm').addEventListener('submit', (event) => {
+    event.preventDefault();
+    alert('Form submitted successfully!'); // This line shows the alert
+  });
 });

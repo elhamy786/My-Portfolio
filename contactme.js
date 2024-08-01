@@ -5,9 +5,9 @@ function submitForm() {
   const email = document.getElementById('email').value.trim();
   const phone = document.getElementById('phone').value.trim();
   const message = document.getElementById('message').value.trim();
-if (!firstName || !lastName || !email || !message) {
-  alert('Please fill out all required fields.');
-  return;
+  if (!firstName || !lastName || !email || !message) {
+    alert('Please fill out all required fields.');
+    return;
 }
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 if (!emailPattern.test(email)) {
