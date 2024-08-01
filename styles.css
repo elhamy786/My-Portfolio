@@ -217,6 +217,30 @@ button {
   padding: -30px;
 }
 
+.fill-78 {
+  width: 78%;
+}
+
+.fill-49 {
+  width: 49%;
+}
+
+.fill-65 {
+  width: 65%;
+}
+
+.fill-76 {
+  width: 76%;
+}
+
+.fill-70 {
+  width: 70%;
+}
+
+.fill-80 {
+  width: 80%;
+}
+
 #about {
   max-width: 800px;
   margin: 0 auto;
@@ -534,6 +558,7 @@ button {
   width: 70%;
   height: 50%;
   margin-left: 14%;
+  margin-top: 60px;
 }
 
 .contact h1 {
