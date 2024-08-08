@@ -129,6 +129,9 @@ footer p {
 .hero h2,
 .hero p {
   margin: 10px 0;
+  margin-left: 6%;
+  margin-top: 2%;
+  padding: 0%;
   opacity: 1;
   text-align: justify;
 }
@@ -159,6 +162,7 @@ footer p {
 .single-image img {
   width: 370px;
   height: 370px;
+  margin-top: -7%;
   border-radius: 50%;
 }
 
@@ -168,7 +172,7 @@ footer p {
   gap: 10px;
   margin: 0;
   margin-top: 20px;
-  margin-left: 5px;
+  margin-left: -45%;
   padding: 30px;
 }
 
@@ -205,8 +209,10 @@ button {
   gap: 0;
   padding: -60px;
   margin: 50px;
+  margin-left: 10%;
+  margin-top: 4%;
   width: 50px;
-  height: 50px;
+  height: 42px;
 }
 
 .social-logos img {
@@ -269,6 +275,7 @@ button {
 #about h2,
 #about h3 {
   text-align: center;
+  font-size: 200%;
 }
 
 #about .content {

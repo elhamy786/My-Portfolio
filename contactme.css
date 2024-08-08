@@ -205,22 +205,30 @@ a:hover {
 }
 
 footer {
-  background-color: #a987a8;
+  background-color: rgba(169, 135, 168, 1);
   color: white;
+  padding: 40px;
   text-align: center;
-  padding: 20px;
-  margin-top: 20px;
-  position: relative;
+  margin-top: 40px;
 }
 
-footer .social-media a {
+.social-media a {
   margin: 0 10px;
+  display: inline-block;
 }
 
-footer .social-media img {
-  width: 60px;
-  height: auto;
-  vertical-align: middle;
+.blog-link {
+  margin: 20px 0;
+  font-size: 1.2em;
+}
+
+.blog-link a {
+  color: white;
+  text-decoration: underline;
+}
+
+.blog-link a:hover {
+  color: #ccc;
 }
 
 @font-face {

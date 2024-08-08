@@ -1,78 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="stylesheet" href="Project.css">
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <div class="logo">Elham Afzali</div>
-        <a href="PorjectMenu.html"><button class="hamburger" id="hamburger" type="button">☰</button></a>
-        <ul class="nav-list" id="navList">
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="About.html" class="nav-link">About Me</a></li>
-          <li><a href="Project.html" class="nav-link">Projects</a></li>
-          <li><a href="Skills.html" class="nav-link">Skills</a></li>
-          <li><a href="#contact" class="nav-link">Contact Me</a></li>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="Project.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Elham Afzali</div>
+      <a href="ProjectMenu.html"><button class="hamburger" id="hamburger" type="button">☰</button></a>
+      <ul class="nav-list" id="navList">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="About.html" class="nav-link">About Me</a></li>
+        <li><a href="Project.html" class="nav-link">Projects</a></li>
+        <li><a href="Skills.html" class="nav-link">Skills</a></li>
+        <li><a href="Contactme.html" class="nav-link">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="projects">
+    <h2>Projects</h2>
+    <h3>Here are the projects I have done recently</h3>
+    <div class="project">
+      <img src="images/pokemon project.png" alt="Online Shopping Website">
+      <p>The Pokémon Search App</p>
+      <p class="description">A web application that allows users to search for Pokémon by name or ID.</p>
+      <div class="button-container"><button class="demo-button" id="openPokemonModal" type="button">See More</button></div>
+    </div>
+    <div id="pokemonModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closePokemonModal">&times;</span>
+        <h1>The Pokémon Search App</h1>
+        <p>The Pokémon Search App is a web application designed to allow users to search for Pokémon and view their details. The app interacts with the Pokémon API to fetch real-time data about various Pokémon, including their names, types, abilities, and stats. Users can type the name of any Pokémon into the search bar and retrieve detailed information about that Pokémon.</p>
+        <p>Key Features:</p>
+        <ul>
+          <li>Search functionality for Pokémon by name.</li>
+          <li>Displays detailed information including types, abilities, and base stats.</li>
+          <li>Responsive design to ensure usability on both desktop and mobile devices.</li>
+          <li>Interactive interface with a user-friendly experience.</li>
         </ul>
-      </nav>
-    </header>
-    <section id="projects">
-      <h2>Projects</h2>
-      <h3>Here are the projects I have done recently</h3>
-      <div class="project">
-        <img src="images/pokemon project.png" alt="Online Shopping Website">
-        <p>The Pokémon Search App</p>
-        <p class="description">A web application that allows users to search for Pokémon by name or ID.</p>
-        <div class="button-container"><a href="Pokemon.html"><button class="demo-button" type="button">See More</button></a></div>
+        <p>
+          The app uses JavaScript for making API requests and handling responses. CSS is used to style the user interface, providing a clean and modern look. The design is mobile-first, ensuring that the app works well on a variety of devices.
+        </p>
+        <div class="button-container2">
+          <button type="button" onclick="window.open('https://elhamy786.github.io/Pokemon-Search-App/')">Live Demo</button>
+          <button type="button" onclick="window.open('https://github.com/elhamy786/Pokemon-Search-App?tab=readme-ov-file')">Source Code</button>
+        </div>
       </div>
-      <div class="project">
-        <img src="images/Roman project.png" alt="Roman Numerals Converter">
-        <p>Roman Numerals Converter</p>
-        <p class="description">A web app that converts numbers to Roman numerals and checks if they are even or odd.</p>
-        <div class="button-container"><a href="Romannumeral.html"><button class="demo-button" type="button">See More</button></a></div>
+    </div>
+    <div class="project">
+      <img src="images/Roman project.png" alt="Roman Numerals Converter">
+      <p>Roman Numerals Converter</p>
+      <p class="description">A web app that converts numbers to Roman numerals and checks if they are even or odd.</p>
+      <div class="button-container"><button class="demo-button" id="openRomanModal" type="button">See More</button></div>
+    </div>
+    <div id="romanModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeRomanModal">&times;</span>
+        <h1>Roman Numerals Converter</h1>
+        <p>A web application that converts numbers to Roman numerals. It also checks if the converted numerals are even or odd.</p>
+        <p>Key Features:</p>
+        <ul>
+          <li>Converts numbers to Roman numerals.</li>
+          <li>Checks if the numerals are even or odd.</li>
+          <li>User-friendly interface and interactive design.</li>
+        </ul>
+        <div class="button-container">
+          <button type="button" onclick="window.open('https://elhamy786.github.io/Roman_Numerals_Converter/')">Live Demo</button>
+          <button type="button" onclick="window.open('https://github.com/elhamy786/Roman_Numerals_Converter')">Source Code</button>
+        </div>
       </div>
-      <div class="project">
-        <img src="images/cat info project.png" alt="Cat Information Website">
-        <p>CatInfoApp</p>
-        <p class="description">A comprehensive platform designed for cat enthusiasts.</p>
-        <div class="button-container"><a href="Catinfo.html"><button class="demo-button" type="button">See More</button></a></div>
+    </div>
+    <div class="project">
+      <img src="images/cat info project.png" alt="Cat Information Website">
+      <p>CatInfoApp</p>
+      <p class="description">A comprehensive platform designed for cat enthusiasts.</p>
+      <div class="button-container"><button class="demo-button" id="openCatInfoModal" type="button">See More</button></div>
+    </div>
+    <div id="catInfoModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeCatInfoModal">&times;</span>
+        <h1>Cat Info App</h1>
+        <p>The Cat Info App is a web application designed to provide users with detailed information about different cat breeds. The app interacts with the Cat API to fetch real-time data about various cat breeds, including their names, characteristics, and images. Users can search for any cat breed and retrieve detailed information about that breed.</p>
+        <p>Key Features:</p>
+        <ul>
+          <li>Search functionality for cat breeds by name.</li>
+          <li>Displays detailed information including characteristics and images.</li>
+          <li>Responsive design to ensure usability on both desktop and mobile devices.</li>
+          <li>Interactive interface with a user-friendly experience.</li>
+        </ul>
+        <div class="button-container">
+          <button type="button" onclick="window.open('https://elhamy786.github.io/Cat_Info_App_Docs/')">Live Demo</button>
+          <button type="button" onclick="window.open('https://github.com/elhamy786/Cat_Info_App_Docs')">Source Code</button>
+        </div>
       </div>
-      <div class="project">
-        <img src="images/Palindrome.png" alt="Online Shopping Website">
-        <p>Palindrome Checker</p>
-        <p class="description">This project is a Palindrome Checker that determines if a string is a palindrome by comparing characters from both ends of the string.</p>
-        <div class="button-container"><a href="Palindrome.html"><button class="demo-button" type="button">See More</button></a></div>
+    </div>
+    <div class="project">
+      <img src="images/Palindrome.png" alt="Online Shopping Website">
+      <p>Palindrome Checker</p>
+      <p class="description">The Palindrome Checker is a web application designed to determine whether a given string is a palindrome. The app allows users to input a string and check if it reads the same forwards and backwards, ignoring spaces, punctuation, and capitalization.</p>
+      <div class="button-container"><button class="demo-button" id="openPalindromeModal" type="button">See More</button></div>
+    </div>
+    <div id="palindromeModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closePalindromeModal">&times;</span>
+        <h1>Palindrome Checker</h1>
+        <p>This project is a Palindrome Checker that determines if a string is a palindrome by comparing characters from both ends of the string.</p>
+        <p>Key Features:</p>
+        <ul>
+          <li>Checks if a string is a palindrome.</li>
+          <li>Compares characters from both ends of the string.</li>
+          <li>Interactive and user-friendly interface.</li>
+        </ul>
+        <div class="button-container">
+          <button type="button" onclick="window.open('https://elhamy786.github.io/Palindrome_Checker/')">Live Demo</button>
+          <button type="button" onclick="window.open('https://github.com/elhamy786/Palindrome_Checker')">Source Code</button>
+        </div>
       </div>
-      <div class="project">
-        <img src="images/Telephone.validator.png" alt="Cat Information Website">
-        <p>Phone Validator App</p>
-        <p class="description">The Telephone Validator project is designed to validate and standardize phone numbers, enhancing data integrity and usability for contact management</p>
-        <div class="button-container"><a href="Phonevalidator.html"><button class="demo-button" type="button">See More</button></a></div>
+    </div>
+    <div class="project">
+      <img src="images/Telephone.validator.png" alt="Cat Information Website">
+      <p>Phone Validator App</p>
+      <p class="description">The Telephone Validator project is designed to validate and standardize phone numbers, enhancing data integrity and usability for contact management.</p>
+      <div class="button-container"><button class="demo-button" id="openPhoneValidatorModal" type="button">See More</button></div>
+    </div>
+    <div id="phoneValidatorModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closePhoneValidatorModal">&times;</span>
+        <h1>Telephone Validator</h1>
+        <p>The Telephone Validator is a web application designed to validate telephone numbers based on various formats and rules. The app allows users to input a telephone number and check if it conforms to the specified format, handling international codes, area codes, and local numbers.</p>
+        <p>Key Features:</p>
+        <ul>
+          <li>Validates telephone numbers based on predefined formats.</li>
+          <li>Supports international codes, area codes, and local numbers.</li>
+          <li>User-friendly interface for easy number input and validation.</li>
+          <li>Responsive design for optimal use on both desktop and mobile devices.</li>
+        </ul>
+        <div class="button-container">
+          <button type="button" onclick="window.open('https://elhamy786.github.io/Telephone-number_validator/')">Live Demo</button>
+          <button type="button" onclick="window.open('https://github.com/elhamy786/Telephone-number_validator')">Source Code</button>
+        </div>
       </div>
-      <div class="project">
-        <img src="images/Cash regester.png" alt="Roman Numerals Converter">
-        <p>Cash Register App</p>
-        <p class="description">The Cash Register App project is designed to streamline the checkout process, offering features for accurate calculations and user-friendly interaction.</p>
-        <div class="button-container"><a href="Cashregister.html"><button class="demo-button" type="button">See More</button></a></div>
+    </div>
+    <div class="project">
+      <img src="images/Cash regester.png" alt="Online Shopping Website">
+      <p>Cash Register App</p>
+      <p class="description">The Cash Register project is a web-based application that automates the process of calculating the change to be returned to customers.</p>
+      <div class="button-container"><button class="demo-button" id="openCashRegisterModal" type="button">See More</button></div>
+    </div>
+    <div id="cashRegisterModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeCashRegisterModal">&times;</span>
+        <h1>Cash Register App</h1>
+        <p>The Cash Register project is a web-based application that automates the process of calculating the change to be returned to customers after a transaction. It ensures accurate calculations and provides a detailed breakdown of the change to be given, including denominations.</p>
+        <p>Key Features:</p>
+        <ul>
+          <li>Automates the calculation of change after a transaction.</li>
+          <li>Provides a detailed breakdown of change by denomination.</li>
+          <li>User-friendly interface for easy transaction management.</li>
+          <li>Responsive design for optimal use on both desktop and mobile devices.</li>
+        </ul>
+        <div class="button-container">
+          <button type="button" onclick="window.open('https://elhamy786.github.io/Cash-Register_2/')">Live Demo</button>
+          <button type="button" onclick="window.open('https://github.com/elhamy786/Cash-Register_2')">Source Code</button>
+        </div>
       </div>
-    </section>
-    <footer>
-      <div class="social-media">
-        <a href="https://www.facebook.com/profile.php?id=61562457382453&mibextid=LQQJ4d"><img src="images/FB.png" alt="Facebook"></a>
-        <a href="https://www.linkedin.com/in/elham-afzali-05326130b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img src="images/linkdin.png" alt="LinkedIn"></a>
-        <a href="https://wa.me/93795733571"><img src="images/Wts.png" alt="WhatsApp"></a>
-        <a href="https://github.com/elhamy786"><img src="images/Github.png" alt="GitHub"></a>
-      </div>
-      <div class="blog-link">
-        <a href="#">Click here</a> to explore the latest of my blog!
-      </div>
-      <p>Copyright@all rights are preserved</p>
-    </footer>
-    <script defer src="Project.js"></script>
-  </body>
+    </div>
+  </section>
+  <script defer src="Project.js"></script>
+</body>
 </html>
-    

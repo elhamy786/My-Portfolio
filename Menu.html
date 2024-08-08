@@ -11,6 +11,15 @@
             margin: 0;
             padding: 0;
         }
+        .open {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            font-size: 24px;
+            color: #511F52;
+            cursor: pointer;
+            z-index: 1001;
+        }
         .menu {
             position: fixed;
             top: 0;
@@ -21,7 +30,7 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             z-index: 1000;
-            display: flex;
+            display: none; /* Menu hidden by default */
             flex-direction: column;
             align-items: center;
             justify-content: center;
@@ -38,51 +47,51 @@
         h1 {
             text-align: center;
             color: #333;
-            font-size: 24px; /* Adjusted size for mobile */
+            font-size: 24px;
         }
         p {
             line-height: 1.6;
             color: #555;
-            font-size: 14px; /* Adjusted size for mobile */
+            font-size: 14px;
         }
         .button-container {
             text-align: center;
-            margin-top: 10px; /* Reduced margin for mobile */
+            margin-top: 10px;
         }
         button {
             color: #511F52;
-            width: 120px; /* Adjusted width for mobile */
-            height: 35px; /* Adjusted height for mobile */
-            font-size: 14px; /* Adjusted font size for mobile */
+            width: 120px;
+            height: 35px;
+            font-size: 14px;
             border: 2px solid #511F52;
             box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5);
             font-family: 'Acme', sans-serif;
-            margin: 5px; /* Reduced margin for mobile */
+            margin: 5px;
         }
         .icon-container {
             display: flex;
-            flex-direction: column; /* Adjusted layout for mobile */
+            flex-direction: column;
             align-items: center;
-            gap: 10px; /* Reduced gap for mobile */
-            margin-top: 10px; /* Reduced margin for mobile */
+            gap: 10px;
+            margin-top: 10px;
         }
         .icon-box {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            width: 60px; /* Adjusted width for mobile */
-            height: 60px; /* Adjusted height for mobile */
+            width: 60px;
+            height: 60px;
             border: 2px solid #511F52;
             border-radius: 50%;
             background-color: #f1e6ec;
             box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5);
             color: #511F52;
             text-align: center;
-            padding: 5px; /* Reduced padding for mobile */
+            padding: 5px;
         }
         .icon {
-            font-size: 24px; /* Adjusted size for mobile */
+            font-size: 24px;
         }
         @font-face {
             font-family: 'Acme';
@@ -94,8 +103,9 @@
     </style>
 </head>
 <body>
+    <div class="open" id="open-btn">&#9776; Open Menu</div>
     <div class="menu" id="menu">
-        <a href="index.html"><span class="close" id="close-btn">&#10005;</span></a>
+        <span class="close" id="close-btn">&#10005;</span>
         <h1>My Menu</h1>
         <div class="icon-container">
             <a href="index.html"><div class="icon-box">
@@ -114,16 +124,22 @@
                 <i class="icon skills-icon">&#128221;</i>
                 <p>Skills</p>
             </div></a>
-            <div class="icon-box">
+            <a href="Contact.html"><div class="icon-box">
                 <i class="icon contact-icon">&#9993;</i>
                 <p>Contact Me</p>
-            </div>
+            </div></a>
         </div>
     </div>
- <script>
+    <script>
+        document.getElementById('open-btn').addEventListener('click', function() {
+            document.getElementById('menu').style.display = 'flex';
+        });
+
         document.getElementById('close-btn').addEventListener('click', function() {
             document.getElementById('menu').style.display = 'none';
         });
     </script>
 </body>
 </html>
+
+
