@@ -30,6 +30,12 @@ header {
   gap: 20px;
 }
 
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+  color: white;
+}
+
 .hamburger {
   display: none;
 }

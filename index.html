@@ -76,29 +76,88 @@
         </div>
       </div>
     </section>
-    <section id="projects" class="projects">
+    <section id="projects">
       <h2>Projects</h2>
       <h3>Here are the projects I have done recently</h3>
       <div class="project">
         <img src="images/pokemon project.png" alt="Online Shopping Website">
         <p>The Pokémon Search App</p>
         <p class="description">A web application that allows users to search for Pokémon by name or ID.</p>
-        <div class="button-container"><a href="Pokemon.html"><button class="demo-button" type="button">See More</button></a></div>
+        <div class="button-container"><button class="demo-button" id="openPokemonModal" type="button">See More</button></div>
       </div>
-      <div class="project">
-        <img src="images/cat info project.png" alt="Cat Information Website">
-        <p>CatInfoApp</p>
-        <p class="description">A comprehensive platform designed for cat enthusiasts.</p>
-        <div class="button-container"><a href="Catinfo.html"><button class="demo-button" type="button">See More</button></a></div>
+      <div id="pokemonModal" class="modal">
+        <div class="modal-content">
+          <span class="close" id="closePokemonModal">&times;</span>
+          <h1>The Pokémon Search App</h1>
+          <p>The Pokémon Search App is a web application designed to allow users to search for Pokémon and view their details. The app interacts with the Pokémon API to fetch real-time data about various Pokémon, including their names, types, abilities, and stats. Users can type the name of any Pokémon into the search bar and retrieve detailed information about that Pokémon.</p>
+          <p>Key Features:</p>
+          <ul>
+            <li>Search functionality for Pokémon by name.</li>
+            <li>Displays detailed information including types, abilities, and base stats.</li>
+            <li>Responsive design to ensure usability on both desktop and mobile devices.</li>
+            <li>Interactive interface with a user-friendly experience.</li>
+          </ul>
+          <p>
+            The app uses JavaScript for making API requests and handling responses. CSS is used to style the user interface, providing a clean and modern look. The design is mobile-first, ensuring that the app works well on a variety of devices.
+          </p>
+          <div class="button-container2">
+            <button type="button" onclick="window.open('https://elhamy786.github.io/Pokemon-Search-App/')">Live Demo</button>
+            <button type="button" onclick="window.open('https://github.com/elhamy786/Pokemon-Search-App?tab=readme-ov-file')">Source Code</button>
+          </div>
+        </div>
       </div>
       <div class="project">
         <img src="images/Roman project.png" alt="Roman Numerals Converter">
         <p>Roman Numerals Converter</p>
         <p class="description">A web app that converts numbers to Roman numerals and checks if they are even or odd.</p>
-        <div class="button-container"><a href="Romannumeral.html"><button class="demo-button" type="button">See More</button></a></div>
+        <div class="button-container"><button class="demo-button" id="openRomanModal" type="button">See More</button></div>
+      </div>
+      <div id="romanModal" class="modal">
+        <div class="modal-content">
+          <span class="close" id="closeRomanModal">&times;</span>
+          <h1>Roman Numerals Converter</h1>
+          <p>The Roman Numeral Converter is a web application designed to convert numbers between Roman numerals and Arabic numerals. The app provides an easy-to-use interface for users to input a number and get its equivalent in Roman numerals, or vice versa.</p>
+          <p>Key Features:</p>
+          <ul>
+            <li>Conversion functionality for both Roman numerals to Arabic numerals and vice versa.</li>
+            <li>User-friendly interface with clear input fields and results.</li>
+            <li>Responsive design to ensure usability on both desktop and mobile devices.</li>
+            <li>Interactive interface with a modern look and feel.</li>
+          </ul>
+          <p>The app uses JavaScript to handle the conversion logic. CSS is used to style the user interface, providing a clean and modern look. The design is mobile-first, ensuring that the app works well on a variety of devices.</p>
+          <div class="button-container2">
+            <button type="button" onclick="window.open('https://elhamy786.github.io/Roman-Numeral/')">Live Demo</button>
+            <button type="button" onclick="window.open('https://github.com/elhamy786/Roman-Numeral')">Source Code</button>
+          </div>
         </div>
-        <div class="see-more-container">
-          <a href="Project.html"><button class="see-more" type="button">See More</button></a>
+      </div>
+      <div class="project">
+        <img src="images/cat info project.png" alt="Cat Information Website">
+        <p>CatInfoApp</p>
+        <p class="description">A comprehensive platform designed for cat enthusiasts.</p>
+        <div class="button-container"><button class="demo-button" id="openCatInfoModal" type="button">See More</button></div>
+      </div>
+      <div id="catInfoModal" class="modal">
+        <div class="modal-content">
+          <span class="close" id="closeCatInfoModal">&times;</span>
+          <h1>Cat Info App</h1>
+          <p>The Cat Info App is a web application designed to provide users with detailed information about different cat breeds. The app interacts with the Cat API to fetch real-time data about various cat breeds, including their names, characteristics, and images. Users can search for any cat breed and retrieve detailed information about that breed.</p>
+          <p>Key Features:</p>
+          <ul>
+            <li>Search functionality for cat breeds by name.</li>
+            <li>Displays detailed information including characteristics and images.</li>
+            <li>Responsive design to ensure usability on both desktop and mobile devices.</li>
+            <li>Interactive interface with a user-friendly experience.</li>
+          </ul>
+          <p>The app uses JavaScript for making API requests and handling responses. CSS is used to style the user interface, providing a clean and modern look. The design is mobile-first, ensuring that the app works well on a variety of devices.</p>
+          <div class="button-container2">
+            <button type="button" onclick="window.open('https://elhamy786.github.io/Cat_Info_App_Docs/')">Live Demo</button>
+            <button type="button" onclick="window.open('https://github.com/elhamy786/Cat_Info_App_Docs')">Source Code</button>
+          </div>
+        </div>
+      </div>
+      <div id="see-more" class="see-more-container">
+      <a href="Project.html"><button class="see-more" type="button">See More</button></a>
       </div>
     </section>
     <section id="skills">
@@ -171,14 +230,14 @@
           <h3>Contact me</h3>
           <form id="contactForm" action="https://formspree.io/f/xblrodky" method="POST">
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" >
+            <input type="text" id="name" name="name" required>
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" >
+            <input type="email" id="email" name="email" required>
             <label for="message">Message</label>
-            <textarea id="message" name="message"></textarea>
+            <textarea id="message" name="message" required></textarea>
             <button type="submit">Send</button>
           </form>
-        </div>
+        </div>     
         <div class="contact-info">
           <h2>Feel free to contact me!</h2>
           <p>
@@ -201,6 +260,6 @@
       </div>
       <p>Copyright@all rights are preserved</p>
     </footer>
-    <script defer src="scripts.js"></script>
+    <script defer src="script.js"></script>
   </body>
 </html>
