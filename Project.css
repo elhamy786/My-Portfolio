@@ -331,6 +331,18 @@ footer p {
   footer {
     width: 80%;
   }
+
+  .modal-content {
+    width: 94%;
+    max-width: 400px;
+    padding: 18px;
+    max-height: 96%;
+    font-size: 85%;
+  }
+
+  .close {
+    font-size: 40px;
+  }
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
