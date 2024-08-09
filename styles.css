@@ -1009,7 +1009,6 @@ footer {
   header {
     width: 1440px;
     height: 104px;
-    gap: 0px;
     opacity: 0.9;
   }
 
@@ -1019,8 +1018,7 @@ footer {
     position: absolute;
     top: 29.31px;
     left: 88px;
-    gap: 0px;
-    opacity: 1; /* Adjusted from 0px to make logo visible */
+    opacity: 1;
   }
 
   .hero .content h1 {
@@ -1029,8 +1027,7 @@ footer {
     position: absolute;
     top: 172.29px;
     left: 140.95px;
-    gap: 0px;
-    opacity: 1; /* Adjusted from 0px to make h1 visible */
+    opacity: 1;
   }
 
   .hero .content h2 {
@@ -1039,8 +1036,7 @@ footer {
     position: absolute;
     top: 172.29px;
     left: 140.95px;
-    gap: 0px;
-    opacity: 1; /* Adjusted from 0px to make h2 visible */
+    opacity: 1;
   }
 
   .hero .content p {
@@ -1049,8 +1045,7 @@ footer {
     position: absolute;
     top: 337.73px;
     left: 136.73px;
-    gap: 0px;
-    opacity: 1; /* Adjusted from 0px to make p visible */
+    opacity: 1;
   }
 
   .single-image img {
@@ -1069,7 +1064,6 @@ footer {
     position: absolute;
     top: 494.42px;
     left: 305.35px;
-    gap: 0px;
     opacity: 1;
   }
 
@@ -1079,7 +1073,6 @@ footer {
     position: absolute;
     top: 688.44px;
     left: 162.73px;
-    gap: 0px;
     opacity: 1;
   }
 }
