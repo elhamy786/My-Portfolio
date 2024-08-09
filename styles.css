@@ -184,13 +184,6 @@ footer p {
   padding: 30px;
 }
 
-.button1:hover,
-.button1:focus {
-  background-color: #f4e7ed;
-  color: #511f52;
-  border: 2px solid #511f52;
-}
-
 .button1 {
   background-color: #511f52;
   box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5);
@@ -200,10 +193,10 @@ footer p {
   font-size: 18px;
 }
 
-.button2:hover,
-.button2:focus {
-  background-color: #511f52;
-  color: #f4e7ed;
+.button1:hover,
+.button1:focus {
+  background-color: #f4e7ed;
+  color: #511f52;
   border: 2px solid #511f52;
 }
 
@@ -214,6 +207,13 @@ footer p {
   font-size: 18px;
   border: 2px solid #511f52;
   box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5);
+}
+
+.button2:hover,
+.button2:focus {
+  background-color: #511f52;
+  color: #f4e7ed;
+  border: 2px solid #511f52;
 }
 
 button {
@@ -402,9 +402,24 @@ button {
   margin-top: -2%;
 }
 
+.button-container2 button {
+  font-size: 20px;
+  padding: 7px 24px;
+  border-radius: 2px;
+  background-color: #fff;
+  color: rgba(81, 31, 82, 1);
+  cursor: pointer;
+  margin: 20px;
+  width: 230px;
+  height: 40px;
+  border: 2px solid #511f52;
+  box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5);
+  font-family: 'Acme', sans-serif;
+}
+
 #about button:hover {
   background-color: #dfd2e1;
-  color: #511F52;
+  color: #511f52;
 }
 
 .skills-container {
@@ -616,7 +631,7 @@ button {
 }
 
 .close {
-  color: #511F52;
+  color: #511f52;
   float: right;
   font-size: 35px;
   font-weight: bold;
@@ -627,21 +642,6 @@ button {
 .close:focus {
   color: #bc96af;
   text-decoration: none;
-}
-
-.button-container2 button {
-  font-size: 20px;
-  padding: 7px 24px;
-  border-radius: 2px;
-  background-color: #fff;
-  color: rgba(81, 31, 82, 1);
-  cursor: pointer;
-  margin: 20px;
-  width: 230px;
-  height: 40px;
-  border: 2px solid #511f52;
-  box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5);
-  font-family: 'Acme', sans-serif;
 }
 
 .button-container2 button:hover {

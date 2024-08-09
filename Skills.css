@@ -278,7 +278,7 @@ footer {
     width: 107%;
   }
 
-   .nav-list {
+  .nav-list {
     display: none;
     flex-direction: row;
     gap: 10px;
@@ -293,7 +293,7 @@ footer {
     border: none;
     margin: 0;
   }
-  
+
   .hamburger {
     display: block;
     background: none;
