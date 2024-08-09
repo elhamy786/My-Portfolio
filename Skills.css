@@ -284,24 +284,28 @@ footer {
     gap: 10px;
     position: absolute;
     top: 60px;
-    margin: 0 auto;
-    margin-left: 0;
+    left: 0;
     background-color: #a987a8;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 95%;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    margin: 0;
   }
-
+  
   .hamburger {
     display: block;
     background: none;
     border: none;
-    font-size: 24px;
+    font-size: 30px;
     cursor: pointer;
+    color: #f9f7fb;
+    outline: none;
   }
 
-  .nav-list.show {
-    display: flex;
+  a {
+    text-decoration: none;
   }
 
   .skills-container h1 {

@@ -1,5 +1,3 @@
-// Project.js
-
 document.addEventListener('DOMContentLoaded', () => {
   const modals = {
     pokemon: document.getElementById('pokemonModal'),

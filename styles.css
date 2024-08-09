@@ -170,6 +170,8 @@ footer p {
   height: 370px;
   margin-top: -7%;
   border-radius: 50%;
+  border: 3px solid rgba(81, 31, 82, 0.58);
+  box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5);
 }
 
 .buttons {
@@ -333,6 +335,8 @@ button {
   object-fit: cover;
   margin-right: 30px;
   margin-left: -200px;
+  border: 3px solid rgba(81, 31, 82, 0.58);
+  box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5);
 }
 
 .contact-info p {
@@ -725,14 +729,14 @@ footer {
     gap: 10px;
     position: absolute;
     top: 60px;
-    left: 0; /* Align to the left edge */
+    left: 0;
     background-color: #a987a8;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 100%; /* Full width */
-    box-sizing: border-box; /* Include padding in width */
-    border: none; /* Remove any border */
-    margin: 0; /* Remove margin to avoid spacing issues */
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    margin: 0;
   }
   
   .hamburger {
@@ -749,13 +753,10 @@ footer {
     text-decoration: none;
   }
 
-  .nav-list.show {
-    display: flex;
-  }
-
   .hero {
     display: flex;
     flex-direction: column;
+    margin-left: -18%;
     align-items: center;
   }
 
@@ -767,23 +768,25 @@ footer {
   }
 
   .hero h1 {
-    font-size: 2.5rem;
+    font-size: 190%;
     margin-top: 20px;
   }
 
   .hero h2 {
-    font-size: 2rem;
+    font-size: 180%;
   }
 
   .hero p {
-    font-size: 100%;
+    font-size: 130%;
   }
 
   .single-image img {
-    width: 100%;
+    width: 90%;
     height: auto;
+    border: 6px solid #511F52;
+    box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5);
     border-radius: 50%;
-    margin-left: 10%;
+    margin-left: 20%;
     margin-top: 10%;
   }
 
@@ -794,7 +797,7 @@ footer {
     justify-content: center;
     gap: 20px;
     padding: 10%;
-    margin-left: 2%;
+    margin-left: 10%;
   }
 
   .button1,
@@ -812,14 +815,19 @@ footer {
   }
 
   .social-logos img {
-    width: 40px;
+    width: 60px;
     height: auto;
+    margin-left: 30%;
   }
 
   #about {
     padding: 10px;
     text-align: center;
-    margin-left: 18%;
+    margin-left: 20%;
+  }
+
+  .about h3 {
+    margin-left: 5%;
   }
 
   #about .content {
@@ -840,7 +848,7 @@ footer {
   #about img {
     width: 100%;
     margin: 0 0 20px 0;
-    border-radius: 50%;
+    border-radius: 60%;
     height: 200%;
   }
 
@@ -862,14 +870,15 @@ footer {
   #about p {
     max-width: 100%;
     margin: 0;
-    padding: 10px;
-    font-size: 1rem;
+    padding: 0;
+    font-size: 110%;
     order: 3;
   }
 
   #about button {
     margin: 10%;
     padding: 2%;
+    margin-left: 18%;
   }
 
   .certificates {
@@ -943,6 +952,31 @@ footer {
   footer {
     padding: 20px;
     width: 105%;
+  }
+
+  .projects1 h2 {
+    margin-left: 10%;
+  }
+
+  .see-more-container{
+    margin-left: 14%;
+  }
+
+  .skills-container h1,
+  p {
+    margin-left: 16%;
+  }
+
+  .modal-content {
+    width: 94%;
+    max-width: 400px;
+    padding: 18px;
+    max-height: 96%;
+    font-size: 85%;
+  }
+
+  .close {
+    font-size: 40px;
   }
 }
 

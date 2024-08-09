@@ -1,129 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Page</title>
     <style>
-        body {
-            font-family: 'Acme', sans-serif;
-            background-color: #fcf8f8;
-            margin: 0;
-            padding: 0;
-        }
-        .menu {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: #e2cbe1;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        .close {
-            display: block;
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            font-size: 24px;
-            color: #511F52;
-            cursor: pointer;
-        }
-        h1 {
-            text-align: center;
-            color: #333;
-            font-size: 24px; /* Adjusted size for mobile */
-        }
-        p {
-            line-height: 1.6;
-            color: #555;
-            font-size: 14px; /* Adjusted size for mobile */
-        }
-        .button-container {
-            text-align: center;
-            margin-top: 10px; /* Reduced margin for mobile */
-        }
-        button {
-            color: #511F52;
-            width: 120px; /* Adjusted width for mobile */
-            height: 35px; /* Adjusted height for mobile */
-            font-size: 14px; /* Adjusted font size for mobile */
-            border: 2px solid #511F52;
-            box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5);
-            font-family: 'Acme', sans-serif;
-            margin: 5px; /* Reduced margin for mobile */
-        }
-        .icon-container {
-            display: flex;
-            flex-direction: column; /* Adjusted layout for mobile */
-            align-items: center;
-            gap: 10px; /* Reduced gap for mobile */
-            margin-top: 10px; /* Reduced margin for mobile */
-        }
-        .icon-box {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 60px; /* Adjusted width for mobile */
-            height: 60px; /* Adjusted height for mobile */
-            border: 2px solid #511F52;
-            border-radius: 50%;
-            background-color: #f1e6ec;
-            box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5);
-            color: #511F52;
-            text-align: center;
-            padding: 5px; /* Reduced padding for mobile */
-        }
-        .icon {
-            font-size: 24px; /* Adjusted size for mobile */
-        }
-        @font-face {
-            font-family: 'Acme';
-            src: url('Acme-Regular.ttf') format('woff2'),  /* Modern Browsers */
-                 url('Acme-Regular.ttf') format('woff');    /* Older Browsers */
-            font-weight: normal;
-            font-style: normal;
-        }
+      body {
+        font-family: 'Acme', sans-serif;
+        background-color: #fcf8f8;
+        margin: 0;
+        padding: 0;
+      }
+
+      .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 93%;
+        height: 93%;
+        background: rgba(244, 238, 244, 1);
+        border-radius: 8px;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 20px;
+        border: 13px solid rgba(169, 135, 168, 1);
+      }
+
+      .close {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 27px;
+        font-weight: 900; 
+        color: #511F52;
+        cursor: pointer;
+      }
+
+      .profile-image {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 2px solid #511F52;
+        margin-bottom: 20px;
+        margin-right: 60%;
+      }
+
+      .menu-item, .menu-item1, .menu-item2 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 45px;
+        margin-top: 2%;
+        color: #511f52;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .menu-item {
+        margin-right: 50%;
+      }
+
+      .menu-item1 {
+        margin-right: 45%;
+        margin-top: 2%;
+      }
+
+      .menu-item2 {
+        margin-right: 40%;
+        padding: 2%;
+      }
+
+      .menu-item img {
+        width: 30px;
+        height: 30px;
+        margin-right: 15px;
+      }
+
+      .separator {
+        width: 2px;
+        height: 250px;
+        background-color: #511F52;
+        margin-bottom: 2px;
+        margin-right: 70%;
+      }
+
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="menu" id="menu">
-        <a href="About.html"><span class="close" id="close-btn">&#10005;</span></a>
-        <h1>My Menu</h1>
-        <div class="icon-container">
-            <a href="index.html"><div class="icon-box">
-                <i class="icon home-icon">&#127968;</i>
-                <p>Home</p>
-            </div></a>
-            <a href="About.html"><div class="icon-box">
-                <i class="icon about-icon">&#128100;</i>
-                <p>About Me</p>
-            </div></a>
-            <a href="Project.html"><div class="icon-box">
-                <i class="icon projects-icon">&#128196;</i>
-                <p>Projects</p>
-            </div></a>
-            <a href="Skills.html"><div class="icon-box">
-                <i class="icon skills-icon">&#128221;</i>
-                <p>Skills</p>
-            </div></a>
-            <div class="icon-box">
-                <i class="icon contact-icon">&#9993;</i>
-                <p>Contact Me</p>
-            </div>
-        </div>
+      <a href="About.html"><span class="close" id="close-btn">&#10005;</span></a>
+      <img src="images/elham.jpg" alt="Profile" class="profile-image">
+      <a href="index.html" class="menu-item"><img src="images/me (5).png" alt="Home">Home</a>
+      <div class="separator"></div>
+      <a href="About.html" class="menu-item2"><img src="images/me (1).png" alt="About Me">About Me</a>
+      <div class="separator"></div>
+      <a href="Project.html" class="menu-item1"><img src="images/me (4).png" alt="Projects">Projects</a>
+      <div class="separator"></div>
+      <a href="Skills.html" class="menu-item"><img src="images/me (3).png" alt="Skills">Skills</a>
+      <div class="separator"></div>
+      <a href="Contactme.html" class="menu-item2"><img src="images/me (2).png" alt="Contact Me">Contact Me</a>
     </div>
- <script>
-        document.getElementById('close-btn').addEventListener('click', function() {
-            document.getElementById('menu').style.display = 'none';
-        });
+    <script>
+      document.getElementById('close-btn').addEventListener('click', function() {
+        document.getElementById('menu').style.display = 'none';
+      });
     </script>
-</body>
+  </body>
 </html>
+
