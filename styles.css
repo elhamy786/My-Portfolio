@@ -290,7 +290,7 @@ button {
 }
 
 .projects h2,
-  h3 {
+h3 {
   margin-left: 10%;
 }
 
@@ -1004,7 +1004,7 @@ footer {
   }
 }
 
-/* Media query for 1440px and larger add Figma design*/
+/* Media query for 1440px and larger add Figma design */
 
 @media (min-width: 1440px) {
   header {
@@ -1068,7 +1068,8 @@ footer {
     opacity: 1;
   }
 
-  .button1, .button2 {
+  .button1, 
+  .button2 {
     width: 200px;
     height: 61.47px;
     position: absolute;
