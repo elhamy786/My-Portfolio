@@ -289,14 +289,14 @@ button {
   text-shadow: -1px -1px 0 #511f52, 1px -1px 0 #511f52, -1px  1px 0 #511f52, 1px  1px 0 #511f52;
 }
 
-.contact-form h3 {
-  margin-bottom: 20px;
-  color: #511f52;
-}
-
 .projects h2,
   h3 {
   margin-left: 10%;
+}
+
+.contact-form h3 {
+  margin-bottom: 20px;
+  color: #511f52;
 }
 
 #about h2 {
@@ -396,10 +396,6 @@ button {
   margin-left: 35%;
 }
 
-.contact-form button:hover {
-  background-color: #8e5c95;
-}
-
 .button-container2 button {
   font-size: 20px;
   padding: 7px 24px;
@@ -415,6 +411,14 @@ button {
   font-family: 'Acme', sans-serif;
 }
 
+.contact-form button:hover {
+  background-color: #8e5c95;
+}
+
+.button-container2 button:hover {
+  background-color: #dec7e0;
+}
+
 #about button {
   display: block;
   margin: -80px auto 0;
@@ -424,10 +428,6 @@ button {
   height: 40px;
   font-size: 18px;
   margin-top: -2%;
-}
-
-.button-container2 button:hover {
-  background-color: #dec7e0;
 }
 
 #about button:hover {
@@ -818,6 +818,11 @@ footer {
     font-size: 180%;
   }
 
+  .skills-container h1,
+  p {
+    margin-left: 16%;
+  }
+
   .hero p {
     font-size: 130%;
   }
@@ -868,6 +873,11 @@ footer {
     margin-left: 20%;
   }
 
+  .certificates h2,
+  h3 {
+    margin-left: 10%;
+  }
+
   .about h3 {
     margin-left: 5%;
   }
@@ -892,11 +902,6 @@ footer {
     margin: 0 0 20px 0;
     border-radius: 60%;
     height: 200%;
-  }
-
-  .certificates h2,
-  h3 {
-    margin-left: 10%;
   }
 
   #about button {
@@ -982,13 +987,8 @@ footer {
     margin-left: 10%;
   }
 
-  .see-more-container{
+  .see-more-container {
     margin-left: 14%;
-  }
-
-  .skills-container h1,
-  p {
-    margin-left: 16%;
   }
 
   .modal-content {
@@ -1005,6 +1005,7 @@ footer {
 }
 
 /* Media query for 1440px and larger add Figma design*/
+
 @media (min-width: 1440px) {
   header {
     width: 1440px;
