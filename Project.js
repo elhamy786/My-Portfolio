@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     catInfo: document.getElementById('catInfoModal'),
     palindrome: document.getElementById('palindromeModal'),
     phoneValidator: document.getElementById('phoneValidatorModal'),
-    cashRegister: document.getElementById('cashRegisterModal')
+    cashRegister: document.getElementById('cashRegisterModal'),
   };
 
   const openModal = (modalId) => {
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('openPhoneValidatorModal').addEventListener('click', () => openModal('phoneValidator'));
   document.getElementById('openCashRegisterModal').addEventListener('click', () => openModal('cashRegister'));
 
-  Object.keys(modals).forEach(modalId => {
+  Object.keys(modals).forEach((modalId) => {
     document.getElementById(`close${modalId.charAt(0).toUpperCase() + modalId.slice(1)}Modal`).addEventListener('click', () => closeModal(modalId));
     
     window.addEventListener('click', (event) => {
@@ -33,4 +33,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
-
