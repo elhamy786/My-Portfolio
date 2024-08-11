@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const mobileMenu = document.getElementById('hamburger');
   const navList = document.getElementById('navList');
-  document.querySelectorAll('.nav-link').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
+
+  document.querySelectorAll('.nav-link').forEach((anchor) => {
+    anchor.addEventListener('click', function handleNavClick(e) {
       if (this.getAttribute('href').startsWith('#')) {
         e.preventDefault();
         const targetId = this.getAttribute('href').substring(1);
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (targetElement) {
           window.scrollTo({
             top: targetElement.offsetTop,
-            behavior: 'smooth'
+            behavior: 'smooth',
           });
         }
       }
@@ -43,9 +43,9 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('openRomanModal').addEventListener('click', () => openModal('roman'));
   document.getElementById('openCatInfoModal').addEventListener('click', () => openModal('catInfo'));
 
-  Object.keys(modals).forEach(modalId => {
+  Object.keys(modals).forEach((modalId) => {
     document.getElementById(`close${modalId.charAt(0).toUpperCase() + modalId.slice(1)}Modal`).addEventListener('click', () => closeModal(modalId));
-    
+
     window.addEventListener('click', (event) => {
       if (event.target === modals[modalId]) {
         closeModal(modalId);
@@ -74,8 +74,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Form submission
     const form = document.getElementById('contactForm');
-    form.action = "https://formspree.io/f/xblrodky";
-    form.method = "POST";
+    form.action = 'https://formspree.io/f/xblrodky';
+    form.method = 'POST';
     form.submit(); // Ensure this line is reached and not blocked
     form.reset();
   });
