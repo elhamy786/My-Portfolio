@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   Object.keys(modals).forEach((modalId) => {
     document.getElementById(`close${modalId.charAt(0).toUpperCase() + modalId.slice(1)}Modal`).addEventListener('click', () => closeModal(modalId));
-    
     window.addEventListener('click', (event) => {
       if (event.target === modals[modalId]) {
         closeModal(modalId);
