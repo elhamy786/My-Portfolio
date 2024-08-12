@@ -82,7 +82,7 @@ Explain how to use your project. Provide examples and instructions on how to run
 
 This portfolio was designed in collaboration with three talented designers:
 
-- Bahara Noorzai: [Linkedin]([Linkedin](https://www.linkedin.com/in/elham-afzali-05326130b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app))
+- Bahara Noorzai: [Linkedin](https://www.linkedin.com/in/elham-afzali-05326130b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)
 - Friba Hussa: [Linkedin](https://www.linkedin.com/in/friba-hussa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)
 - Shikeba Nasseri: [Linkedin](https://www.linkedin.com/in/shikeba-nasseri?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)
 

@@ -757,10 +757,6 @@ footer {
 }
 
 @media (max-width: 600px), (max-width: 900px) {
-  body {
-    font-size: 20px;
-  }
-
   header {
     width: 107%;
   }
@@ -815,7 +811,7 @@ footer {
   }
 
   .hero h2 {
-    font-size: 180%;
+    font-size: 170%;
   }
 
   .skills-container h1,
@@ -828,12 +824,14 @@ footer {
   }
 
   .single-image img {
-    width: 90%;
-    height: auto;
+    width: 18.75rem;
+    height: 18.75rem;
+    top: 6.6125rem;
+    left: 4.0625rem;
     border: 6px solid #511f52;
     box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5);
     border-radius: 50%;
-    margin-left: 20%;
+    margin-left: 9rem;
     margin-top: 10%;
   }
 
@@ -961,11 +959,20 @@ footer {
     margin: 0;
   }
 
+  .projects1 p {
+    margin-right: 10%;
+  }
+
+  .education-card p {
+   margin-right: 18%;
+  }
+
   .contact {
     width: 90%;
     margin: 7%;
     padding: 20px;
-    font-size: 70%;
+    font-size: 90%;
+
   }
 
   .contact-container {
@@ -1077,4 +1084,13 @@ footer {
     left: 162.73px;
     opacity: 1;
   }
+
+  #about img {
+    width: 479.31px;
+    height: 448.63px;
+    top: 1148.81px;
+    left: 159.74px;
+    border: 3px 0px 0px 0px;
+  }
+
 }
