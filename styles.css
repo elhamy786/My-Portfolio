@@ -980,7 +980,7 @@ footer {
   }
 
   .education-card p {
-   margin-right: 18%;
+     margin-right: 18%;
   }
 
   .contact {
@@ -988,7 +988,6 @@ footer {
     margin: 7%;
     padding: 20px;
     font-size: 90%;
-
   }
 
   .contact-container {
@@ -1106,7 +1105,5 @@ footer {
     height: 448.63px;
     top: 1148.81px;
     left: 159.74px;
-    border: 3px 0px 0px 0px;
   }
-
 }
