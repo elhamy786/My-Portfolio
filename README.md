@@ -35,9 +35,9 @@ document.getElementById('profilePicture').addEventListener('click', function han
 
 ## Demo 📸
 
-Include a demo or animated GIF of your project. You can use tools like [asciinema](https://asciinema.org/) to record your terminal sessions.
-
-![Demo](https://via.placeholder.com/600x300)
+[Live Demo](https://elhamy786.github.io/My-Portfolio/)
+![Screenshot](./images/Screenshot%202024-08-12%20225839.png)
+![Screenshot](./images/Screenshot%202024-08-12%20225902.png)
 
 ## Technologies Used 🛠️
 
@@ -47,27 +47,24 @@ Include a demo or animated GIF of your project. You can use tools like [asciinem
 
 ## Installation 💻
 
-Provide step-by-step instructions on how to install and set up your project. Include any dependencies or prerequisites that need to be installed.
 
 ```bash
-# Provide code snippets or commands to help users get started.
+ 1: Clone the Repository:
+git clone https://github.com/elhamy786/My-Portfolio/pull/1
 ```
 
 ```bash
-# You can also include multiple steps to guide users through the installation process.
+2: Navigate to the Project Directory:
+cd My-Portfolio
 ```
 
 ```bash
-# You can also include any troubleshooting tips or FAQs.
+3: Open the index.html , style.css , script.js About.html and other Files in Your Browser.
 ```
 
-## Usage 🎯
+## Figma Design Link 🎯
 
-Explain how to use your project. Provide examples and instructions on how to run it, any command-line options, or any other relevant information.
-
-```bash
-# Provide code snippets or commands to demonstrate how to use your project.
-```
+- [Link] https://www.figma.com/design/1NFNPZ5Bx6kgc0nIY5keQ8/Portfolio-Designing?node-id=3-582&t=H3W10WGzEomOHfgl-1
 
 ## Features ⭐
 
