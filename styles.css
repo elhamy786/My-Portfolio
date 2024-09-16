@@ -772,7 +772,15 @@ footer {
   font-style: normal;
 }
 
-@media (max-width: 600px), (max-width: 900px) {
+.menu {
+  display: none;
+}
+
+.popup-btn {
+  display: none;
+}
+
+@media (max-width: 600px) {
   header {
     width: 107%;
   }
@@ -1024,86 +1032,103 @@ footer {
   .close {
     font-size: 40px;
   }
+
+  .menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 93%;
+    height: 93%;
+    background: rgba(244, 238, 244, 1);
+    border-radius: 8px;
+    z-index: 1000;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 30px;
+    border: 15px solid rgba(169, 135, 168, 1);
+    overflow-y: auto;
+  }
+
+  .popup-btn {
+    display: block;
+    margin-left: 70%;
+    margin-bottom: -8%;
+    width: 30%;
+    height: 100%;
+    font-size: 200%;
+    background: none;
+    color: white;
+  }
+
+  .separator {
+    width: 2px;
+    height: 250px;
+    background-color: #511F52;
+    margin-bottom: 2px;
+    margin-right: 65%;
+  }
+  
+  .close {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    font-weight: 900;
+    color: #511F52;
+    cursor: pointer;
+    margin-top: 8%;
+    margin-right: 10%;
+    font-weight: bold;
+  }
+
+  .menu-item, .menu-item1, .menu-item2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
+    margin-top: 2%;
+    color: #511f52;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .menu-item {
+    margin-right: 50%;
+  }
+  
+  .menu-item1 {
+    margin-right: 48%;
+    margin-top: 2%;
+  }
+  
+  .menu-item2 {
+    margin-right: 45%;
+    padding: 2%;
+  }
+  
+  .menu-item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+  }
+  
+  .modal-content {
+    width: 94%;
+    max-width: 400px;
+    padding: 18px;
+    max-height: 96%;
+    font-size: 85%;
+  }
+  
+  .image {
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    margin-right: 60%;
+    margin-bottom: 30px;
+  }
 }
 
-/* Media query for 1440px and larger add Figma design */
-
-@media (min-width: 1440px) {
-  header {
-    width: 1440px;
-    height: 104px;
-    opacity: 0.9;
-  }
-
-  .logo {
-    width: 163px;
-    height: 35.56px;
-    position: absolute;
-    top: 29.31px;
-    left: 88px;
-    opacity: 1;
-  }
-
-  .hero .content h1 {
-    width: 442.77px;
-    height: 136.7px;
-    position: absolute;
-    top: 172.29px;
-    left: 140.95px;
-    opacity: 1;
-  }
-
-  .hero .content h2 {
-    width: 442.77px;
-    height: 136.7px;
-    position: absolute;
-    top: 172.29px;
-    left: 140.95px;
-    opacity: 1;
-  }
-
-  .hero .content p {
-    width: 509.44px;
-    height: 127.36px;
-    position: absolute;
-    top: 337.73px;
-    left: 136.73px;
-    opacity: 1;
-  }
-
-  .single-image img {
-    width: 570px;
-    height: 570px;
-    position: absolute;
-    top: 180.92px;
-    left: 733.52px;
-    border: 3px solid #511f52;
-    opacity: 1;
-  }
-
-  .social-logos img {
-    width: 50px;
-    height: 42.45px;
-    position: absolute;
-    top: 494.42px;
-    left: 305.35px;
-    opacity: 1;
-  }
-
-  .button1,
-  .button2 {
-    width: 200px;
-    height: 61.47px;
-    position: absolute;
-    top: 688.44px;
-    left: 162.73px;
-    opacity: 1;
-  }
-
-  #about img {
-    width: 479.31px;
-    height: 448.63px;
-    top: 1148.81px;
-    left: 159.74px;
-  }
-}

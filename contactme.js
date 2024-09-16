@@ -39,3 +39,15 @@ document.getElementById('contactForm').addEventListener('submit', (event) => {
   event.preventDefault();
   submitForm();
 });
+
+ const popupMenu = document.getElementById('menu');
+ const openBtn = document.getElementById('menu-btn');
+ const closeBtn = document.getElementById('close-btn');
+
+ openBtn.addEventListener('click', function() {
+   popupMenu.style.display = 'flex';
+ });
+
+ closeBtn.addEventListener('click', function() {
+   popupMenu.style.display = 'none';
+ });

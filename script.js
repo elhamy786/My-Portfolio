@@ -80,3 +80,18 @@ document.addEventListener('DOMContentLoaded', () => {
     form.reset();
   });
 });
+
+ // Get the elements
+ const popupMenu = document.getElementById('menu');
+ const openBtn = document.getElementById('menu-btn'); // Ensure correct ID
+ const closeBtn = document.getElementById('close-btn');
+
+ // Open the popup
+ openBtn.addEventListener('click', function() {
+   popupMenu.style.display = 'flex'; // Show the menu
+ });
+
+ // Close the popup
+ closeBtn.addEventListener('click', function() {
+   popupMenu.style.display = 'none'; // Hide the menu
+ });
