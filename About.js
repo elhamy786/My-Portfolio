@@ -10,17 +10,18 @@ document.getElementById('profilePicture').addEventListener('click', function han
   this.src = images[currentIndex];
 });
 
- // Get the elements
- const popupMenu = document.getElementById('menu');
- const openBtn = document.getElementById('menu-btn'); // Ensure correct ID
- const closeBtn = document.getElementById('close-btn');
+const popupMenu = document.getElementById('menu');
+const openBtn = document.getElementById('menu-btn');
+const closeBtn = document.getElementById('close-btn');
 
- // Open the popup
- openBtn.addEventListener('click', function() {
-   popupMenu.style.display = 'flex'; // Show the menu
- });
+function openMenu() {
+  popupMenu.style.display = 'flex';
+}
 
- // Close the popup
- closeBtn.addEventListener('click', function() {
-   popupMenu.style.display = 'none'; // Hide the menu
- });
+function closeMenu() {
+  popupMenu.style.display = 'none';
+}
+
+openBtn.addEventListener('click', openMenu);
+closeBtn.addEventListener('click', closeMenu);
+
