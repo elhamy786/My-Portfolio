@@ -11,8 +11,9 @@ header {
   color: white;
   padding: 1rem;
   text-align: center;
-  position: relative;
+  position: fixed;
   width: 97.5%;
+  margin-top: -10%;
 }
 
 .navbar {
@@ -164,40 +165,77 @@ header ul {
 }
 
 footer {
-  background-color: rgba(169, 135, 168, 1);
+  background-color: #a987a8;
   color: white;
-  padding: 40px;
+  padding: 10px;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 80px;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+  height: auto;
+}
+
+.social-media {
+  margin-bottom: 5px;
 }
 
 .social-media a {
-  margin: 0 10px;
+  margin: 0 15px;
   display: inline-block;
+  margin-bottom: -1%;
 }
 
 .social-media img {
-  width: 60px;
-  vertical-align: middle;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  padding: -70px;
 }
 
-.blog-link {
+.blog-container {
+  display: flex;
+  justify-content: center;
   margin: 20px 0;
+  width: 100%;
+}
+
+.blog-frame {
+  border: 3px solid white;
+  padding: 20px;
+  margin: 0 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  max-width: 350px;
+  white-space: nowrap;
+}
+
+.blog-frame a {
+  color: white;
+  text-decoration: none;
   font-size: 1.2em;
 }
 
-.blog-link a {
-  color: white;
+.blog-frame a:hover {
   text-decoration: underline;
 }
 
-.blog-link a:hover {
-  color: #ccc;
+.footer-divider {
+  margin: 20px auto;
+  width: 40%;
+  border-bottom: 3px solid #fff;
+  opacity: 0.6;
 }
 
-footer p {
-  margin-top: 10px;
+.footer-container {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-text {
   font-size: 0.9em;
+  color: white;
+  opacity: 0.8;
 }
 
 .modal {
@@ -289,13 +327,21 @@ footer p {
   display: none;
 }
 
+.projects h2 {
+  margin-top: 10%;
+}
+
 @media (max-width: 600px) {
   body {
     font-size: 16px;
+    padding-top: 1px;
   }
 
   header {
     width: 92%;
+    position: fixed;
+    z-index: 1000;
+    margin-top: -2%;
   }
 
   .nav-list {
@@ -319,6 +365,10 @@ footer p {
     margin: 10px 0;
   }
 
+  .projects h2 {
+    margin-top: 25%;
+    font-size: 240%;
+  }
   .button-container {
     flex-direction: column;
   }
@@ -330,16 +380,17 @@ footer p {
     font-size: 16px;
   }
 
-  .social-media img {
-    width: 40px;
-  }
-
   .blog-link {
     font-size: 1em;
   }
 
-  footer {
-    width: 80%;
+  .blog-frame {
+    font-size: 90%;
+    width: 110%;
+  }
+
+  .social-media {
+    display: flex;
   }
 
   .modal-content {
@@ -351,7 +402,7 @@ footer p {
   }
 
   .close {
-    font-size: 40px;
+    font-size: 50px;
   }
 
   .menu {
@@ -406,7 +457,9 @@ footer p {
     font-weight: bold;
   }
 
-  .menu-item, .menu-item1, .menu-item2 {
+  .menu-item,
+  .menu-item1,
+  .menu-item2 {
     display: flex;
     align-items: center;
     margin-bottom: 45px;

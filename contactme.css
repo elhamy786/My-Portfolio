@@ -11,7 +11,7 @@ header {
   color: white;
   padding: 1rem;
   text-align: center;
-  position: relative;
+  position: fixed;
   width: 97.5%;
 }
 
@@ -106,7 +106,7 @@ header ul {
 
 .contact h1 {
   font-size: 2.5em;
-  margin-bottom: 20px;
+  margin-top: 5%;
 }
 
 footer p {
@@ -161,7 +161,7 @@ footer p {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
-  border: 1.5px solid #a581a5;
+  border: 1.5px solid #511f52;
   border-radius: 10px;
   font-size: 1em;
   background-color: rgba(169, 135, 168, 0.47);
@@ -182,7 +182,8 @@ footer p {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-right: 15%;
   width: 40%;
-  border: 1.5px solid #511f52;
+  border: 2px solid #511f52;
+  margin-top: 10%;
 }
 
 .contact-form button:hover {
@@ -211,30 +212,77 @@ a:hover {
 }
 
 footer {
-  background-color: rgba(169, 135, 168, 1);
+  background-color: #a987a8;
   color: white;
-  padding: 40px;
+  padding: 10px;
   text-align: center;
-  margin-top: 40px;
+  margin-top: -5px;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+  height: auto;
+}
+
+.social-media {
+  margin-bottom: 5px;
 }
 
 .social-media a {
-  margin: 0 10px;
+  margin: 0 15px;
   display: inline-block;
+  margin-bottom: -1%;
 }
 
-.blog-link {
+.social-media img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  padding: -70px;
+}
+
+.blog-container {
+  display: flex;
+  justify-content: center;
   margin: 20px 0;
+  width: 100%;
+}
+
+.blog-frame {
+  border: 3px solid white;
+  padding: 20px;
+  margin: 0 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  max-width: 350px;
+  white-space: nowrap;
+}
+
+.blog-frame a {
+  color: white;
+  text-decoration: none;
   font-size: 1.2em;
 }
 
-.blog-link a {
-  color: white;
+.blog-frame a:hover {
   text-decoration: underline;
 }
 
-.blog-link a:hover {
-  color: #ccc;
+.footer-divider {
+  margin: 20px auto;
+  width: 40%;
+  border-bottom: 3px solid #fff;
+  opacity: 0.6;
+}
+
+.footer-container {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 0.9em;
+  color: white;
+  opacity: 0.8;
 }
 
 .menu {
@@ -261,7 +309,10 @@ footer {
   }
 
   header {
-    width: 135%;
+    height: 5%;
+    position: fixed;
+    z-index: 1000;
+    margin-top: 0%;
   }
 
   .nav-list {
@@ -286,11 +337,17 @@ footer {
   }
 
   .contact h1 {
-    font-size: 230%;
+    font-size: 360%;
+    margin-top: 25%;
+    margin-left: 40%;
   }
 
   .contact p {
     font-size: 180%;
+    margin-left: 2%;
+    display: flex;
+    white-space: nowrap;
+    font-weight: bold;
   }
 
   .contact-container {
@@ -313,12 +370,15 @@ footer {
     width: 100%;
   }
 
-  .contact-form .form-group {
-    width: 80%;
+  .contact-form
+  .form-group {
+    width: 70%;
+    height: 100%;
   }
 
   .contact-form label {
-    font-size: 150%;
+    font-size: 200%;
+    margin-left: 9%;
   }
 
   .contact-form input,
@@ -326,25 +386,33 @@ footer {
     width: 120%;
     padding: 10px;
     font-size: 0.9em;
+    height: 150%;
   }
 
   .contact-form textarea {
-    height: 100px;
+    height: 130px;
     width: 121%;
+    margin-left: 11%;
+  }
+
+  .contact-form input {
+    height: 45px;
+    width: 121%;
+    margin-left: 11%;
   }
 
   .contact-form button {
-    width: 90%;
+    width: 70%;
     padding: 15px;
-    font-size: 1em;
+    font-size: 2em;
     margin-top: 10%;
-    margin-left: 8%;
+    margin-left: 17%;
   }
 
   footer {
-    height: 200%;
-    width: 141%;
-    padding: 10px;
+    height: 240%;
+    width: 142%;
+    padding: 20px;
     box-sizing: border-box;
     margin-top: 48%;
   }
@@ -414,7 +482,9 @@ footer {
     font-weight: bold;
   }
 
-  .menu-item, .menu-item1, .menu-item2 {
+  .menu-item,
+  .menu-item1,
+  .menu-item2 {
     display: flex;
     align-items: center;
     margin-bottom: 45px;
