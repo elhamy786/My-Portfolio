@@ -37,25 +37,25 @@ function submitForm() {
   const phone = document.getElementById('phone').value.trim();
   const message = document.getElementById('message').value.trim();
 
-  if (!firstName || !lastName || !email || !message) {
+  if (!firstName || !lastName || !email || !message) { // eslint-disable-next-line no-alert
     alert('Please fill out all required fields.');
     return;
   }
 
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailPattern.test(email)) {
+  if (!emailPattern.test(email)) { // eslint-disable-next-line no-alert
     alert('Please enter a valid email address.');
     return;
   }
 
   // Check for capital letters in the email
-  if (/[A-Z]/.test(email)) {
+  if (/[A-Z]/.test(email)) { // eslint-disable-next-line no-alert
     alert('Email must be in lowercase only.');
     return;
   }
 
   const phonePattern = /^\d+$/;
-  if (!phonePattern.test(phone)) {
+  if (!phonePattern.test(phone)) { // eslint-disable-next-line no-alert
     alert('Please enter a valid phone number (digits only).');
     return;
   }
@@ -73,7 +73,7 @@ function submitForm() {
   localStorage.removeItem('email');
   localStorage.removeItem('phone');
   localStorage.removeItem('message');
-  
+
   form.reset();
 }
 
@@ -91,15 +91,17 @@ document.getElementById('contactForm').addEventListener('submit', (event) => {
   submitForm();
 });
 
-// Menu functionality remains the same
 const popupMenu = document.getElementById('menu');
 const openBtn = document.getElementById('menu-btn');
 const closeBtn = document.getElementById('close-btn');
 
-openBtn.addEventListener('click', function() {
+function openMenu() {
   popupMenu.style.display = 'flex';
-});
+}
 
-closeBtn.addEventListener('click', function() {
+function closeMenu() {
   popupMenu.style.display = 'none';
-});
+}
+
+openBtn.addEventListener('click', openMenu);
+closeBtn.addEventListener('click', closeMenu);

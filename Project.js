@@ -37,14 +37,14 @@ document.addEventListener('DOMContentLoaded', () => {
 const popupMenu = document.getElementById('menu');
 const openBtn = document.getElementById('menu-btn');
 const closeBtn = document.getElementById('close-btn');
- 
+
 function openMenu() {
   popupMenu.style.display = 'flex';
 }
- 
+
 function closeMenu() {
   popupMenu.style.display = 'none';
 }
- 
+
 openBtn.addEventListener('click', openMenu);
 closeBtn.addEventListener('click', closeMenu);
