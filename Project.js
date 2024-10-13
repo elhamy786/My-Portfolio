@@ -33,19 +33,18 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
- // Get the elements
- const popupMenu = document.getElementById('menu');
- const openBtn = document.getElementById('menu-btn'); // Ensure correct ID
- const closeBtn = document.getElementById('close-btn');
-
- // Open the popup
- openBtn.addEventListener('click', function() {
-   popupMenu.style.display = 'flex'; // Show the menu
- });
-
- // Close the popup
- closeBtn.addEventListener('click', function() {
-   popupMenu.style.display = 'none'; // Hide the menu
- });
-
+// Get the elements
+const popupMenu = document.getElementById('menu');
+const openBtn = document.getElementById('menu-btn');
+const closeBtn = document.getElementById('close-btn');
  
+function openMenu() {
+  popupMenu.style.display = 'flex';
+}
+ 
+function closeMenu() {
+  popupMenu.style.display = 'none';
+}
+ 
+openBtn.addEventListener('click', openMenu);
+closeBtn.addEventListener('click', closeMenu);

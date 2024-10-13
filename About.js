@@ -24,4 +24,3 @@ function closeMenu() {
 
 openBtn.addEventListener('click', openMenu);
 closeBtn.addEventListener('click', closeMenu);
-
