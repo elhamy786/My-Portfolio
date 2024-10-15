@@ -417,11 +417,11 @@ footer {
   .separator {
     width: 2px;
     height: 250px;
-    background-color: #511F52;
+    background-color: #511f52;
     margin-bottom: 2px;
     margin-right: 65%;
   }
-  
+
   .close {
     display: block;
     position: absolute;
@@ -429,14 +429,16 @@ footer {
     right: 10px;
     font-size: 30px;
     font-weight: 900;
-    color: #511F52;
+    color: #511f52;
     cursor: pointer;
     margin-top: 8%;
     margin-right: 10%;
     font-weight: bold;
   }
 
-  .menu-item, .menu-item1, .menu-item2 {
+  .menu-item,
+  .menu-item1,
+  .menu-item2 {
     display: flex;
     align-items: center;
     margin-bottom: 45px;
@@ -446,27 +448,27 @@ footer {
     font-size: 20px;
     font-weight: bold;
   }
-  
+
   .menu-item {
     margin-right: 50%;
   }
-  
+
   .menu-item1 {
     margin-right: 48%;
     margin-top: 2%;
   }
-  
+
   .menu-item2 {
     margin-right: 45%;
     padding: 2%;
   }
-  
+
   .menu-item img {
     width: 30px;
     height: 30px;
     margin-right: 15px;
   }
-  
+
   .modal-content {
     width: 94%;
     max-width: 400px;
@@ -474,7 +476,7 @@ footer {
     max-height: 96%;
     font-size: 85%;
   }
-  
+
   .image {
     width: 20%;
     height: 20%;
