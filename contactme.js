@@ -64,7 +64,7 @@ function submitForm() {
   form.action = 'https://formspree.io/f/xblrodky';
   form.method = 'POST';
   form.submit();
-
+// eslint-disable-next-line no-alert
   alert('Your message has been sent!');
 
   // Clear LocalStorage after submitting
@@ -78,7 +78,7 @@ function submitForm() {
 }
 
 // Add event listener to save data on input change
-document.querySelectorAll('#firstName, #lastName, #email, #phone, #message').forEach(input => {
+document.querySelectorAll('#firstName, #lastName, #email, #phone, #message').forEach((input) => {
   input.addEventListener('input', saveFormData);
 });
 
