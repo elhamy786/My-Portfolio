@@ -831,7 +831,7 @@ footer {
 }
 
 .p2 {
-text-align: center;
+  text-align: center;
 }
 
 @media (max-width: 600px) {
@@ -971,6 +971,12 @@ text-align: center;
     height: 200%;
   }
 
+  .menu-item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+  }
+
   #about button {
     margin: 10%;
     padding: 2%;
@@ -1066,14 +1072,6 @@ text-align: center;
     margin-left: 14%;
   }
 
-  .modal-content {
-    width: 94%;
-    max-width: 400px;
-    padding: 18px;
-    max-height: 96%;
-    font-size: 85%;
-  }
-
   .menu {
     display: none;
     position: fixed;
@@ -1117,7 +1115,6 @@ text-align: center;
     top: 10px;
     right: 10px;
     font-size: 30px;
-    font-weight: 900;
     color: #511f52;
     cursor: pointer;
     margin-top: 8%;
@@ -1150,12 +1147,6 @@ text-align: center;
   .menu-item2 {
     margin-right: 45%;
     padding: 2%;
-  }
-
-  .menu-item img {
-    width: 30px;
-    height: 30px;
-    margin-right: 15px;
   }
 
   .modal-content {
