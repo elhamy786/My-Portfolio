@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elham Afzali Portfolio</title>
+    <link rel="stylesheet" href="Skills.css">
+  </head>
+  <body>
+    <header>
+      <button class="popup-btn" id="menu-btn">☰</button>
+      <!-- Popup Menu (triggered on mobile) -->
+      <div class="menu" id="menu">
+      <span class="close" id="close-btn">&#10005;</span>
+      <img src="images/Elhamyy.jpg" alt="Profile" class="image">
+      <a href="index.html" class="menu-item"><img src="images/me (5).png" alt="Home">Home</a>
+      <div class="separator"></div>
+      <a href="About.html" class="menu-item2"><img src="images/me (1).png" alt="About Me">About Me</a>
+      <div class="separator"></div>
+      <a href="Project.html" class="menu-item1"><img src="images/me (4).png" alt="Projects">Projects</a>
+      <div class="separator"></div>
+      <a href="Skills.html" class="menu-item"><img src="images/me (3).png" alt="Skills">Skills</a>
+      <div class="separator"></div>
+      <a href="Contactme.html" class="menu-item2"><img src="images/me (2).png" alt="Contact Me">Contact Me</a>
+      </div>
+      <nav class="navbar">
+        <div class="logo">Elham Afzali</div>
+        <a href="SkillsMenu.html"><button class="hamburger" id="hamburger" type="button">☰</button></a>
+        <ul class="nav-list" id="navList">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="About.html" class="nav-link">About Me</a></li>
+          <li><a href="Project.html" class="nav-link">Projects</a></li>
+          <li><a href="Skills.html" class="nav-link">Skills</a></li>
+          <li><a href="Contactme.html" class="nav-link">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="skills">
+      <div class="skills-container">
+        <h1>My Skills</h1>
+        <p>Explore What Can I DO!</p>
+        <div class="skills-box">
+          <div class="skills-section language-section">
+            <div class="skill"><img src="images/html.png" alt="HTML"></div>
+            <div class="skill"><img src="images/css.png" alt="CSS"></div>
+            <div class="skill"><img src="images/js (1).png" alt="JavaScript"></div>
+          </div>
+          <div class="skills-section">
+            <div class="skill-bar">
+              <label>Team Work</label>
+              <div class="bar">
+                <div class="fill fill-78"><span class="percentage">78%</span></div>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <label>Time Management</label>
+              <div class="bar">
+                <div class="fill fill-49"><span class="percentage">49%</span></div>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <label>Clean Code</label>
+              <div class="bar">
+                <div class="fill fill-65"><span class="percentage">65%</span></div>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <label>Multi Tasking</label>
+              <div class="bar">
+                <div class="fill fill-76"><span class="percentage">76%</span></div>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <label>Code Review</label>
+              <div class="bar">
+                <div class="fill fill-70"><span class="percentage">70%</span></div>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <label>Crisis Management</label>
+              <div class="bar">
+                <div class="fill fill-80"><span class="percentage">80%</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="social-media">
+        <a href="https://www.facebook.com/profile.php?id=61562457382453&mibextid=LQQJ4d"><img src="images/FB.png" alt="Facebook"></a>
+        <a href="https://www.linkedin.com/in/elham-afzali-05326130b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img src="images/linkdin.png" alt="LinkedIn"></a>
+        <a href="https://wa.me/93795733571"><img src="images/Wts.png" alt="WhatsApp"></a>
+        <a href="https://github.com/elhamy786"><img src="images/Github.png" alt="GitHub"></a>
+      </div>
+      <div class="blog-container">
+        <div class="blog-frame">
+          <a href="MyBlog.html">Click here to explore the latest of my blog!</a>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <p class="footer-text">Copyright@all rights are preserved</p>
+    </footer>    
+    <script>
+      const popupMenu = document.getElementById('menu');
+      const openBtn = document.getElementById('menu-btn');
+      const closeBtn = document.getElementById('close-btn');
+      openBtn.addEventListener('click', function() {
+      popupMenu.style.display = 'flex';
+      });
+      closeBtn.addEventListener('click', function() {
+      popupMenu.style.display = 'none';
+     });
+    </script>
+  </body>
+</html>

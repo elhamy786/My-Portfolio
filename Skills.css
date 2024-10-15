@@ -1,0 +1,571 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fcf8f8;
+  font-family: 'Acme', sans-serif;
+}
+
+header {
+  background-color: #a987a8;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  position: fixed;
+  width: 97.5%;
+  margin-top: -10%;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+  color: white;
+}
+
+.hamburger {
+  display: none;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
+
+header ul li {
+  display: inline;
+  margin: 10px;
+  font-size: 18px;
+}
+
+.nav-list li {
+  margin: 0 15px;
+}
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-list a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 15px 0;
+  display: block;
+}
+
+header .logo {
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+header .menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.bar {
+  background-color: rgba(240, 235, 240, 1);
+  border: 2px solid #511f52;
+  box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5);
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+}
+
+header .menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+}
+
+header ul {
+  list-style: none;
+}
+
+.skills-container {
+  text-align: center;
+  height: 100%;
+}
+
+.skills-container h1 {
+  font-size: 2.5em;
+  margin-top: 10%;
+}
+
+footer p {
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.skills-container p {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.skills-section::after {
+  content: '';
+  display: block;
+  width: 62%;
+  height: 1px;
+  background-color: #511f52;
+  position: absolute;
+  bottom: 180px;
+}
+
+.skills-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #fcf8f8;
+  background-color: #fcf8f8;
+}
+
+.skills-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.language-section {
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.skill {
+  margin: 0 20px;
+}
+
+.skill img {
+  width: 110px;
+  height: 110px;
+}
+
+.skill-bar {
+  width: 48%;
+  margin-bottom: 20px;
+}
+
+.skill-bar label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  color: #511f52;
+}
+
+.fill {
+  height: 37px;
+  background-color: #511f52;
+  border-radius: 25px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+.percentage {
+  position: absolute;
+  right: 20px;
+  width: 20px;
+}
+
+@font-face {
+  font-family: 'Acme';
+  src:
+    url('Acme-Regular.ttf') format('woff2'),
+    url('Acme-Regular.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+footer {
+  background-color: #a987a8;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: 80px;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+  height: auto;
+}
+
+.social-media {
+  margin-bottom: 5px;
+}
+
+.social-media a {
+  margin: 0 15px;
+  display: inline-block;
+  margin-bottom: -1%;
+}
+
+.social-media img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  padding: -70px;
+}
+
+.blog-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.blog-frame {
+  border: 3px solid white;
+  padding: 20px;
+  margin: 0 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  max-width: 350px;
+  white-space: nowrap;
+}
+
+.blog-frame a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.blog-frame a:hover {
+  text-decoration: underline;
+}
+
+.footer-divider {
+  margin: 20px auto;
+  width: 40%;
+  border-bottom: 3px solid #fff;
+  opacity: 0.6;
+}
+
+.footer-container {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 0.9em;
+  color: white;
+  opacity: 0.8;
+}
+
+.fill-78 {
+  width: 78%;
+}
+
+.fill-65 {
+  width: 65%;
+}
+
+.fill-70 {
+  width: 70%;
+}
+
+.fill-49 {
+  width: 49%;
+}
+
+.fill-76 {
+  width: 76%;
+}
+
+.fill-80 {
+  width: 80%;
+}
+
+.menu {
+  display: none;
+}
+
+.popup-btn {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+
+  header {
+    width: 102%;
+    margin-top: 0%;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #a987a8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .skills-container {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .skills-container h1 {
+    font-size: 2rem;
+    margin-left: 10%;
+    margin-top: 23%;
+  }
+
+  .skills-box {
+    padding: 10px;
+    margin-left: 5%;
+  }
+
+  .skill img {
+    width: 75px;
+    height: 80px;
+  }
+
+  footer {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .social-media {
+    display: flex;
+  }
+
+  .blog-frame {
+    font-size: 90%;
+    width: 110%;
+  }
+
+  .footer-divider {
+    width: 80%;
+  }
+
+  .menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 93%;
+    height: 93%;
+    background: rgba(244, 238, 244, 1);
+    border-radius: 8px;
+    z-index: 1000;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 30px;
+    border: 15px solid rgba(169, 135, 168, 1);
+    overflow-y: auto;
+  }
+
+  .popup-btn {
+    display: block;
+    margin-left: 70%;
+    margin-bottom: -8%;
+    width: 30%;
+    height: 100%;
+    font-size: 200%;
+    background: none;
+    color: white;
+    border: none;
+  }
+
+  .separator {
+    width: 2px;
+    height: 250px;
+    background-color: #511f52;
+    margin-bottom: 2px;
+    margin-right: 65%;
+  }
+
+  .close {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: #511f52;
+    cursor: pointer;
+    margin-top: 8%;
+    margin-right: 10%;
+    font-weight: bold;
+  }
+
+  .menu-item,
+  .menu-item1,
+  .menu-item2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
+    margin-top: 2%;
+    color: #511f52;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .menu-item {
+    margin-right: 50%;
+  }
+
+  .menu-item1 {
+    margin-right: 48%;
+    margin-top: 2%;
+  }
+
+  .menu-item2 {
+    margin-right: 45%;
+    padding: 2%;
+  }
+
+  .menu-item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+  }
+
+  .modal-content {
+    width: 94%;
+    max-width: 400px;
+    padding: 18px;
+    max-height: 96%;
+    font-size: 85%;
+  }
+
+  .image {
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    margin-right: 60%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  header {
+    padding: 0.75rem;
+    width: 100%;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .nav-list li {
+    margin: 0 0 10px 0;
+  }
+
+  .nav-list a {
+    padding: 12px 0;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .skills-container h1 {
+    font-size: 2em;
+  }
+
+  .skills-section::after {
+    margin-bottom: 65%;
+    margin-left: 10%;
+  }
+
+  footer p {
+    font-size: 0.85em;
+  }
+
+  .skills-container p {
+    font-size: 1.1em;
+    width: 50%;
+  }
+
+  .skills-box {
+    padding: 15px;
+  }
+
+  .skills-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .skill-bar {
+    width: 48%;
+  }
+
+  .skill img {
+    width: 90px;
+    height: 90px;
+  }
+
+  footer {
+    padding: 30px;
+    margin-top: 250px;
+    width: 95%;
+  }
+
+  .social-media img {
+    width: 50px;
+  }
+
+  .blog-link {
+    font-size: 1.1em;
+  }
+}

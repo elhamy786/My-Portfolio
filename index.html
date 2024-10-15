@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElhamAfzali Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <button class="popup-btn" id="menu-btn">☰</button>
+    <!-- Popup Menu (triggered on mobile) -->
+    <div class="menu" id="menu">
+      <span class="close" id="close-btn">&#10005;</span>
+      <img src="images/Elhamyy.jpg" alt="Profile" class="image">
+      <a href="index.html" class="menu-item"><img src="images/me (5).png" alt="Home">Home</a>
+      <div class="separator"></div>
+      <a href="About.html" class="menu-item2"><img src="images/me (1).png" alt="About Me">About Me</a>
+      <div class="separator"></div>
+      <a href="Project.html" class="menu-item1"><img src="images/me (4).png" alt="Projects">Projects</a>
+      <div class="separator"></div>
+      <a href="Skills.html" class="menu-item"><img src="images/me (3).png" alt="Skills">Skills</a>
+      <div class="separator"></div>
+      <a href="Contactme.html" class="menu-item2"><img src="images/me (2).png" alt="Contact Me">Contact Me</a>
+    </div>
+      <nav class="navbar">
+        <div class="logo">Elham Afzali</div>
+        <ul class="nav-list" id="navList">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="About.html" class="nav-link">About Me</a></li>
+          <li><a href="Project.html" class="nav-link">Projects</a></li>
+          <li><a href="Skills.html" class="nav-link">Skills</a></li>
+          <li><a href="Contactme.html" class="nav-link">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero" id="home">
+      <div class="content">
+        <h1>Hi, I am Elham Afzali</h1>
+        <h2>Web Developer and Graphic Designer</h2>
+        <p>I specialize in creating responsive, user-friendly websites and captivating graphic designs. With a keen eye for detail and a passion for technology, I strive to deliver innovative and effective digital solutions.</p>
+        <div class="social-logos">
+          <a href="https://www.facebook.com/profile.php?id=61562457382453&mibextid=LQQJ4d"><img src="images/FB.png" alt="Facebook Logo"></a>
+          <a href="https://wa.me/93795733571"><img src="images/Wts.png" alt="WhatsApp Logo"></a>
+          <a href="https://github.com/elhamy786"><img src="images/Github.png" alt="GitHub Logo"></a>
+          <a href="https://www.linkedin.com/in/elham-afzali-05326130b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img src="images/linkdin.png" alt="LinkedIn Logo"></a>
+        </div>
+        <div class="buttons">
+          <a href="https://drive.google.com/file/d/1te1W-nrGfsZ-0ASRgM1Zzq9Mx3rfIdAX/view?usp=drive_link"><button class="button1" type="button">Download CV</button></a>
+          <a href="About.html"><button class="button2" type="button">Read More</button></a>
+        </div>
+      </div>
+      <div class="single-image">
+        <img src="images/Elhamyy.jpg" alt="Profile Picture" class="profile-image" >
+      </div>
+    </section>
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <h3>Get to know me better!</h3>
+      <div class="content">
+        <img src="images/Elhamy.jpg" alt="Profile Picture">
+        <p>My academic background includes English, Mathematics, Microsoft Office, and specialized training in Web and Graphic Design from AUAF. I've completed leadership and communication training through the Threads Course by ELEVATE and explored art therapy. I'm proficient in HTML, CSS, and JavaScript, having developed multiple web projects. With a CEL Certificate in English, I aim to blend my technical and creative skills to contribute to innovative solutions.</p>
+      </div>
+      <a href="https://drive.google.com/file/d/1te1W-nrGfsZ-0ASRgM1Zzq9Mx3rfIdAX/view?usp=drive_link"><button class="button1" type="button">Download CV</button></a>
+    </section>
+    <section id="resume" class="certificates">
+      <h2>Certificates</h2>
+      <h3>Here are the list of my academic background</h3>
+      <div class="education-container">
+        <div class="education-card">
+          <a href="https://www.freecodecamp.org/certification/elham1383/javascript-algorithms-and-data-structures-v8"><img src="images/java certifacte.png" alt="JavaScript Certificate"></a>
+          <div class="education-text">
+            <h4>JavaScript Certificate</h4>
+            <p>FreeCodeCamp certificate for 300 hours of JavaScript coursework completion.</p>
+          </div>
+        </div>
+        <div class="education-card">
+          <a href="https://www.freecodecamp.org/certification/elham1383/responsive-web-design"><img src="images/web project.png" alt="Responsive Web"></a>
+          <div class="education-text">
+            <h4>Responsive Web Design Certificate</h4>
+            <p>FreeCodeCamp certificate for completing the Responsive Web Design course.</p>
+          </div>
+        </div>
+        <div class="education-card">
+          <a href="https://drive.google.com/file/d/1KRgmL_V9pJsKJ03VRsPjzkYuZR7dHbua/view?usp=drive_link"><img src="images/AUAF.jpg" alt="Kabul University"></a>
+          <div class="education-text">
+            <h4>AUAF Certificate</h4>
+            <p>AUAF certificate in Web Design, Graphic Design, Mathematics, and English.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects1">
+      <h2>Projects</h2>
+      <h3>Here are the projects I have done recently</h3>
+      <div class="project">
+        <img src="images/pokemon project.png" alt="Online Shopping Website">
+        <p>The Pokémon Search App</p>
+        <p class="description1">A web application that allows users to search for Pokémon by name or ID.</p>
+        <div class="button-container"><button class="demo-button" id="openPokemonModal" type="button">See More</button></div>
+      </div>
+      <div id="pokemonModal" class="modal">
+        <div class="modal-content">
+          <span class="close" id="closePokemonModal">&times;</span>
+          <h1>The Pokémon Search App</h1>
+          <img src="images/POKE.png" alt="Pokémon Search App" class="modal-image">
+          <p>The Pokémon Search App is a web application designed to allow users to search for Pokémon and view their details. The app interacts with the Pokémon API to fetch real-time data about various Pokémon, including their names, types, abilities, and stats. Users can type the name of any Pokémon into the search bar and retrieve detailed information about that Pokémon.</p>
+          <p>
+            The app uses JavaScript for making API requests and handling responses. CSS is used to style the user interface, providing a clean and modern look. The design is mobile-first, ensuring that the app works well on a variety of devices.
+          </p>
+          <div class="button-container2">
+            <button type="button" onclick="window.open('https://elhamy786.github.io/Pokemon-Search-App/')">Live Demo</button>
+            <button type="button" onclick="window.open('https://github.com/elhamy786/Pokemon-Search-App?tab=readme-ov-file')">Source Code</button>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <img src="images/Roman project.png" alt="Roman Numerals Converter">
+        <p>Roman Numerals Converter</p>
+        <p class="description1">A web app that converts numbers to Roman numerals and checks if they are even or odd.</p>
+        <div class="button-container"><button class="demo-button" id="openRomanModal" type="button">See More</button></div>
+      </div>
+      <div id="romanModal" class="modal">
+        <div class="modal-content">
+          <span class="close" id="closeRomanModal">&times;</span>
+          <h1>Roman Numerals Converter</h1>
+          <img src="images/ROMANNUM.png" alt="Roman Numerals Converter" class="modal-image">
+          <p>The Roman Numeral Converter is a web application designed to convert numbers between Roman numerals and Arabic numerals. The app provides an easy-to-use interface for users to input a number and get its equivalent in Roman numerals, or vice versa.</p>
+          <p>The app uses JavaScript to handle the conversion logic. CSS is used to style the user interface, providing a clean and modern look. The design is mobile-first, ensuring that the app works well on a variety of devices.</p>
+          <div class="button-container2">
+            <button type="button" onclick="window.open('https://elhamy786.github.io/Roman-Numeral/')">Live Demo</button>
+            <button type="button" onclick="window.open('https://github.com/elhamy786/Roman-Numeral')">Source Code</button>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <img src="images/cat info project.png" alt="Cat Information Website">
+        <p>CatInfoApp</p>
+        <p class="description1 ">A comprehensive platform designed for cat enthusiasts.</p>
+        <div class="button-container"><button class="demo-button" id="openCatInfoModal" type="button">See More</button></div>
+      </div>
+      <div id="catInfoModal" class="modal">
+        <div class="modal-content">
+          <span class="close" id="closeCatInfoModal">&times;</span>
+          <h1>Cat Info App</h1>
+          <img src="images/CAT.png" alt="Cat Info App" class="modal-image">
+          <p>The Cat Info App is a web application designed to provide users with detailed information about different cat breeds. The app interacts with the Cat API to fetch real-time data about various cat breeds, including their names, characteristics, and images. Users can search for any cat breed and retrieve detailed information about that breed.</p>
+          <p>The app uses JavaScript for making API requests and handling responses. CSS is used to style the user interface, providing a clean and modern look. The design is mobile-first, ensuring that the app works well on a variety of devices.</p>
+          <div class="button-container2">
+            <button type="button" onclick="window.open('https://elhamy786.github.io/Cat_Info_App_Docs/')">Live Demo</button>
+            <button type="button" onclick="window.open('https://github.com/elhamy786/Cat_Info_App_Docs')">Source Code</button>
+          </div>
+        </div>
+      </div>
+      <div id="see-more" class="see-more-container">
+      <a href="Project.html"><button class="see-more" type="button">See More</button></a>
+      </div>
+    </section>
+    <footer>
+      <div class="social-media">
+        <a href="https://www.facebook.com/profile.php?id=61562457382453&mibextid=LQQJ4d"><img src="images/FB.png" alt="Facebook"></a>
+        <a href="https://www.linkedin.com/in/elham-afzali-05326130b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img src="images/linkdin.png" alt="LinkedIn"></a>
+        <a href="https://wa.me/93795733571"><img src="images/Wts.png" alt="WhatsApp"></a>
+        <a href="https://github.com/elhamy786"><img src="images/Github.png" alt="GitHub"></a>
+      </div>
+      <div class="blog-container">
+        <div class="blog-frame">
+          <a href="MyBlog.html">Click here to explore the latest of my blog!</a>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <p class="footer-text">Copyright@all rights are preserved</p>
+    </footer>    
+    <script defer src="script.js"></script>
+  </body>
+</html>

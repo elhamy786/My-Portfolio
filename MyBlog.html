@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Art of Web Development: Mastering HTML, CSS, and JavaScript</title>
+    <style>
+      body {
+        font-family: 'Acme', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: rgba(244, 238, 244, 1);
+        color: #333;
+      }
+
+      header {
+        background-color: #511f52;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        font-size: 90%;
+      }
+
+      h1, 
+      h2 {
+        margin: 0;
+      }
+
+      section {
+        padding: 20px;
+        background-color: #f9f7fb;
+        margin: 20px;
+        border-radius: 8px;
+        border: 3px solid rgba(81, 31, 82, 0.58);
+        box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .photo-gallery {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+
+      .photo-gallery img {
+        max-width: 45%;
+        height: auto;
+        border: 2px solid #511f52;
+        box-shadow: 0 4px 8px rgba(81, 31, 82, 0.5);
+        border-radius: 15%;
+      }
+
+      @font-face {
+        font-family: 'Acme';
+        src:
+          url('Acme-Regular.ttf') format('woff2'),
+          url('Acme-Regular.ttf') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+        .menu { 
+            display: none; 
+            background-color: #007acc; 
+            color: white; 
+            padding: 10px; 
+        }
+        .menu-button { 
+            background-color: #333; 
+            color: white; 
+            padding: 10px; 
+            cursor: pointer; 
+            text-align: center; 
+            border-radius: 4px; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Art of Web Development: Mastering HTML, CSS, and JavaScript</h1>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>I'm Elham Afzali, a passionate web developer dedicated to creating responsive and user-friendly websites.</p>
+        <div class="photo-gallery">
+            <img src="images/blog.jpg" alt="Elham Afzali working on a project">
+            <img src="images/blog2.jpg" alt="Elham Afzali working on a project">
+        </div>
+    </section>
+    
+
+    <section>
+        <h2>HTML: The Foundation of Your Website</h2>
+        <p>HTML (HyperText Markup Language) is the backbone of any web page. It structures the content and provides meaning to the different elements on your site. Think of HTML as the skeleton of your website—it defines where everything goes and what each piece of content represents.</p>
+        
+        <h3>Key HTML Elements:</h3>
+        <ul>
+            <li><strong>Headings (`&lt;h1&gt;` to `&lt;h6&gt;`)</strong>: Define the titles and subtitles.</li>
+            <li><strong>Paragraphs (`&lt;p&gt;`)</strong>: Structure your text content.</li>
+            <li><strong>Images (`&lt;img&gt;`)</strong>: Add visual content to your site.</li>
+            <li><strong>Links (`&lt;a&gt;`)</strong>: Connect different pages or external sites.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>CSS: Bringing Your Website to Life</h2>
+        <p>CSS (Cascading Style Sheets) is what makes your website look good. It controls the layout, colors, fonts, and overall design, turning a plain HTML structure into something visually appealing. With CSS, you can transform a simple webpage into a work of art.</p>
+        
+        <h3>Essential CSS Concepts:</h3>
+        <ul>
+            <li><strong>Selectors</strong>: Target HTML elements to style.</li>
+            <li><strong>Box Model</strong>: Understand margins, borders, padding, and content.</li>
+            <li><strong>Flexbox & Grid</strong>: Create responsive layouts.</li>
+            <li><strong>Media Queries</strong>: Ensure your site looks great on all devices.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>JavaScript: Adding Interactivity</h2>
+        <p>JavaScript is the programming language that breathes life into your website. It allows you to create dynamic content, respond to user actions, and build interactive features. Whether it's a simple form validation or a complex web application, JavaScript is the key to making your site engaging.</p>
+        
+        <h3>JavaScript Basics:</h3>
+      <ul>
+        <li><strong>Variables</strong>: Store and manipulate data.</li>
+        <li><strong>Functions</strong>: Reusable blocks of code.</li>
+        <li><strong>Events</strong>: Respond to user interactions like clicks and key presses.</li>
+        <li><strong>DOM Manipulation</strong>: Change the HTML and CSS of your page dynamically.</li>
+      </ul>
+    </section>
+  </body>
+</html>
