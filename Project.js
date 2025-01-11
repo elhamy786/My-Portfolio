@@ -6,6 +6,12 @@ document.addEventListener('DOMContentLoaded', () => {
     palindrome: document.getElementById('palindromeModal'),
     phoneValidator: document.getElementById('phoneValidatorModal'),
     cashRegister: document.getElementById('cashRegisterModal'),
+    calculator: document.getElementById('calculatorModal'),
+    elhamyFlowerShop: document.getElementById('elhamyFlowerShopModal'),
+    drumMachine: document.getElementById('drumMachineModal'),
+    dogsGallery: document.getElementById('dogsGalleryModal'),
+    galaxyShowcase: document.getElementById('galaxyShowcaseModal'),
+    pomodoroClock: document.getElementById('pomodoroClockModal'),
   };
 
   const openModal = (modalId) => {
@@ -22,6 +28,12 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('openPalindromeModal').addEventListener('click', () => openModal('palindrome'));
   document.getElementById('openPhoneValidatorModal').addEventListener('click', () => openModal('phoneValidator'));
   document.getElementById('openCashRegisterModal').addEventListener('click', () => openModal('cashRegister'));
+  document.getElementById('openCalculatorModal').addEventListener('click', () => openModal('calculator'));
+  document.getElementById('openElhamyFlowerShopModal').addEventListener('click', () => openModal('elhamyFlowerShop'));
+  document.getElementById('openDrumMachineModal').addEventListener('click', () => openModal('drumMachine'));
+  document.getElementById('openDogsGalleryModal').addEventListener('click', () => openModal('dogsGallery'));
+  document.getElementById('openGalaxyShowcaseModal').addEventListener('click', () => openModal('galaxyShowcase'));
+  document.getElementById('openPomodoroClockModal').addEventListener('click', () => openModal('pomodoroClock'));
 
   Object.keys(modals).forEach((modalId) => {
     document.getElementById(`close${modalId.charAt(0).toUpperCase() + modalId.slice(1)}Modal`).addEventListener('click', () => closeModal(modalId));
