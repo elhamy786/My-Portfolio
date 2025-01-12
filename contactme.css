@@ -313,6 +313,7 @@ footer {
     position: fixed;
     z-index: 1000;
     margin-top: 0%;
+    width: 100%;
   }
 
   .nav-list {
@@ -343,7 +344,7 @@ footer {
   }
 
   .contact p {
-    font-size: 180%;
+    font-size: 160%;
     margin-left: 2%;
     display: flex;
     white-space: nowrap;
@@ -410,7 +411,7 @@ footer {
 
   footer {
     height: 240%;
-    width: 142%;
+    width: 153%;
     padding: 20px;
     box-sizing: border-box;
     margin-top: 48%;
